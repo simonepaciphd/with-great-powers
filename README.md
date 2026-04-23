@@ -32,7 +32,7 @@ This repo is the full project folder used to write the paper — not a polished 
 
 ## Verification status
 
-Most literature and claims are marked `partially-verified` pending a final human-verification pass (Stage 6 of the project roadmap). Do not cite derived claims from this repo without checking the underlying source.
+Literature notes have been human-verified against their primary sources (2026-04-22). Remaining `partially-verified` entries in `asset-registry.csv` are non-literature assets (drafts, figures, skills) awaiting the Stage 6 submission-pass review.
 
 ## Citation
 

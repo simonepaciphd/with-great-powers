@@ -2,7 +2,7 @@
 
 Living plan for the paper. Check items off as they complete; add/remove as scope evolves. Update the `last_modified` line below whenever a substantive edit is made.
 
-**Last modified:** 2026-04-23 (Stage 5b items #1, #2, #3 done. (1) `project-setup-existing.md` drafted. (2) `skills-library-setup.md` closed out: Phase 2.5 added for retroactive flat→native wrapping, synced to canonical library, dogfooded via the connection skill on this project. (3) `skills-library-connection.md` drafted; both `project-setup*` skills dispatch to it; run live on this project — AGENTS.md Skills block rewritten as the mechanism-C pointer, `## Skills` section added to project `README.md`. Appendix README updated with both new skills.) Previously 2026-04-22 (title changed from "Transparent Control" to "With Great Powers: A Practical Guide to Agentic AI for Social Science Research"; appendix rebuild in Overleaf: LaTeX startup checklist + skill-protocol prose descriptions + ledger-schema tables + real sample rows + nine rules of engagement + §3.1 harness footnote + §3.3 lit-review mention + §3.3 provenance terminology fix; Stage 5b punch list added below)
+**Last modified:** 2026-04-23 (Stage 0 literature-verification item closed — user completed human-verification pass against primary sources on 2026-04-22. Previously: Stage 5b items #1, #2, #3 done. (1) `project-setup-existing.md` drafted. (2) `skills-library-setup.md` closed out: Phase 2.5 added for retroactive flat→native wrapping, synced to canonical library, dogfooded via the connection skill on this project. (3) `skills-library-connection.md` drafted; both `project-setup*` skills dispatch to it; run live on this project — AGENTS.md Skills block rewritten as the mechanism-C pointer, `## Skills` section added to project `README.md`. Appendix README updated with both new skills.) Previously 2026-04-22 (title changed from "Transparent Control" to "With Great Powers: A Practical Guide to Agentic AI for Social Science Research"; appendix rebuild in Overleaf: LaTeX startup checklist + skill-protocol prose descriptions + ledger-schema tables + real sample rows + nine rules of engagement + §3.1 harness footnote + §3.3 lit-review mention + §3.3 provenance terminology fix; Stage 5b punch list added below)
 
 ---
 
@@ -16,7 +16,7 @@ Living plan for the paper. Check items off as they complete; add/remove as scope
 - [x] Seeded `background/literature/` with HAI 2026 index, Spirling, Gordon/Samii/Su Data-NoMAD, Pepinsky (all `partially-verified`)
 - [x] Candidate frontier applications drafted (`background/literature/frontier-applications.md`) — needs user selection
 - [x] Adoption statistics drafted (`background/literature/adoption-statistics.md`) — needs user selection of 2–3 headline numbers
-- [ ] Human-verify each literature note against primary sources *(deferred — notes stay `partially-verified` until Stage 6 review pass)*
+- [x] Human-verify each literature note against primary sources *(completed 2026-04-22; all lit notes reviewed against primary sources by user)*
 - [x] Reconcile final title — initial decision (2026-04-21) was to keep **"Transparent Control"**; title changed (2026-04-22) to **"With Great Powers: A Practical Guide to Agentic AI for Social Science Research"** (folder name unchanged)
 - [x] Sync `C:\Users\spaci\Dropbox\Skills\project-setup.md` with upgraded appendix template
 

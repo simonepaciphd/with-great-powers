@@ -182,5 +182,3 @@ This site's companion repository <em>is</em> the project folder used to write th
 ## Contact
 
 Simone Paci · Stanford University · [spaci@stanford.edu](mailto:spaci@stanford.edu)
-
-<p class="verification-note"><em>Most literature and claims in the current draft are marked <code>partially-verified</code> pending a final human-verification pass. Do not cite derived claims without checking the underlying source.</em></p>
