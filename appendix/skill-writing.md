@@ -219,7 +219,7 @@ Goal: <one sentence>.
 
 ## Worked example
 
-A diff-in-differences skill (the one gestured at in Figure~2 of the *Transparent Control* paper) was drafted by:
+A diff-in-differences skill (the one gestured at in Figure~2 of the *With Great Powers* paper) was drafted by:
 
 1. *Phase 0:* the researcher confirmed the task came up in roughly half their empirical projects and wanted a single reusable protocol.
 2. *Phase 1:* three prior diff-in-diff analyses were handed to a subagent, which extracted recurring choices (two-way fixed effects vs. event-study; clustered vs. wild bootstrap; parallel-trends diagnostics as plots vs. placebo tests).

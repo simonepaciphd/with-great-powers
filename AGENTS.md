@@ -1,4 +1,4 @@
-# Transparent Control: A Practical Guide to Agentic AI for Social Science Research — Project Folder
+# With Great Powers: A Practical Guide to Agentic AI for Social Science Research — Project Folder
 
 ## Project Overview
 
@@ -99,4 +99,4 @@ See `interaction-log.csv`. Schema documented in `project-setup.md`.
 
 - Overleaf root: `C:\Users\spaci\Dropbox\Apps\Overleaf`
 - **This paper's Overleaf project:** `C:\Users\spaci\Dropbox\Apps\Overleaf\AI in the Research Process\main.tex` (author: Simone Paci, April 2026; currently a bare scaffold).
-- Note: the Overleaf title ("AI in the Research Process") may diverge from the working title in this README ("Transparent Control…") — confirm which is the final title before submission.
+- Note: the Overleaf *folder* is named "AI in the Research Process" (legacy), but the paper's `\title{}` and all project docs now use **"With Great Powers: A Practical Guide to Agentic AI for Social Science Research"** (updated 2026-04-22). Folder rename deferred to avoid breaking Dropbox↔Overleaf sync.

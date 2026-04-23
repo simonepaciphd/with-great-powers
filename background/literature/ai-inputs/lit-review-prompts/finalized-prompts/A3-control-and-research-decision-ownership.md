@@ -136,7 +136,7 @@ Keep `summary.md` under ~800 words. The goal is **scannable landscape orientatio
 ## Prompt context
 
 ### Paper context
-- **Title:** Transparent Control: A Practical Guide to Agentic AI for Social Science Research
+- **Title:** With Great Powers: A Practical Guide to Agentic AI for Social Science Research
 - **Thesis:** Effective agentic-AI adoption in social-science research rests on two principles — researcher control and radical transparency.
 
 ### Strand

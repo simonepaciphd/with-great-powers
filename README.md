@@ -1,6 +1,6 @@
 # With Great Powers — Replication Package
 
-Companion repository for **Simone Paci**, *Transparent Control: A Practical Guide to Agentic AI for Social Science Research* (working paper, April 2026).
+Companion repository for **Simone Paci**, *With Great Powers: A Practical Guide to Agentic AI for Social Science Research* (working paper, April 2026).
 
 This repo is the full project folder used to write the paper — not a polished deliverable. It is released as a working replication package so readers can inspect the artifacts, provenance, and interaction history that the paper references.
 
@@ -29,7 +29,7 @@ Most literature and claims are marked `partially-verified` pending a final human
 
 ## Citation
 
-> Paci, Simone (2026). *Transparent Control: A Practical Guide to Agentic AI for Social Science Research*. Working paper. Replication package: https://github.com/simonepaciphd/with-great-powers
+> Paci, Simone (2026). *With Great Powers: A Practical Guide to Agentic AI for Social Science Research*. Working paper. Replication package: https://github.com/simonepaciphd/with-great-powers
 
 ## License
 

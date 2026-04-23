@@ -1,6 +1,6 @@
 # Startup Checklist: From Chat to Harness
 
-For researchers already using chat-mode AI who are setting up their first agentic project. Each item is one action. The five sections map onto the setup stack of the *Transparent Control* paper (\S3).
+For researchers already using chat-mode AI who are setting up their first agentic project. Each item is one action. The five sections map onto the setup stack of the *With Great Powers* paper (\S3).
 
 ## Tool
 

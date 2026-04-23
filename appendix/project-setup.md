@@ -2,7 +2,7 @@
 
 This file is both a **template** and a **setup instruction** for agentic AI tools working in a social science research project. Copy it into a new project folder and either (a) fill in the bracketed placeholders manually and rename to `README.md`, or (b) invoke an agent with "run the project-setup protocol" to scaffold the folder semi-automatically.
 
-The protocol reflects two governing principles from *Transparent Control* (working paper): **researcher control** (humans retain all key decisions) and **radical transparency** (full provenance and verification tracking for every asset).
+The protocol reflects two governing principles from *With Great Powers* (working paper): **researcher control** (humans retain all key decisions) and **radical transparency** (full provenance and verification tracking for every asset).
 
 ---
 

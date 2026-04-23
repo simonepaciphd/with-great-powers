@@ -1,8 +1,8 @@
-# Implementation Roadmap — Transparent Control
+# Implementation Roadmap — With Great Powers
 
 Living plan for the paper. Check items off as they complete; add/remove as scope evolves. Update the `last_modified` line below whenever a substantive edit is made.
 
-**Last modified:** 2026-04-22 (appendix rebuild in Overleaf: LaTeX startup checklist + skill-protocol prose descriptions + ledger-schema tables + real sample rows + nine rules of engagement + §3.1 harness footnote + §3.3 lit-review mention + §3.3 provenance terminology fix; Stage 5b punch list added below)
+**Last modified:** 2026-04-22 (title changed from "Transparent Control" to "With Great Powers: A Practical Guide to Agentic AI for Social Science Research"; appendix rebuild in Overleaf: LaTeX startup checklist + skill-protocol prose descriptions + ledger-schema tables + real sample rows + nine rules of engagement + §3.1 harness footnote + §3.3 lit-review mention + §3.3 provenance terminology fix; Stage 5b punch list added below)
 
 ---
 
@@ -17,7 +17,7 @@ Living plan for the paper. Check items off as they complete; add/remove as scope
 - [x] Candidate frontier applications drafted (`background/literature/frontier-applications.md`) — needs user selection
 - [x] Adoption statistics drafted (`background/literature/adoption-statistics.md`) — needs user selection of 2–3 headline numbers
 - [ ] Human-verify each literature note against primary sources *(deferred — notes stay `partially-verified` until Stage 6 review pass)*
-- [x] Reconcile final title — keeping working title **"Transparent Control"** (folder name unchanged)
+- [x] Reconcile final title — initial decision (2026-04-21) was to keep **"Transparent Control"**; title changed (2026-04-22) to **"With Great Powers: A Practical Guide to Agentic AI for Social Science Research"** (folder name unchanged)
 - [x] Sync `C:\Users\spaci\Dropbox\Skills\project-setup.md` with upgraded appendix template
 
 ## Stage 1 — Section 1: Introduction *(3 paragraphs)* — **v1 drafted**

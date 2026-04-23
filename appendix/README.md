@@ -1,6 +1,6 @@
-# Online Appendix — *Transparent Control*
+# Online Appendix — *With Great Powers*
 
-This folder is the online appendix for Simone Paci, *Transparent Control: A Practical Guide to Agentic AI for Social Science Research* (working paper, April 2026). It doubles as replication-package content: the artifacts collected here are not prose rewrites of the workflow described in the paper, but the machine-readable source that the paper's own production used.
+This folder is the online appendix for Simone Paci, *With Great Powers: A Practical Guide to Agentic AI for Social Science Research* (working paper, April 2026). It doubles as replication-package content: the artifacts collected here are not prose rewrites of the workflow described in the paper, but the machine-readable source that the paper's own production used.
 
 ## Contents
 

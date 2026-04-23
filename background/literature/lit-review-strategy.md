@@ -1,4 +1,4 @@
-# Lit-Review Strategy — Transparent Control
+# Lit-Review Strategy — With Great Powers
 
 **Status:** 8 strands approved (2026-04-21). Anchors and qualitative constraints are agent proposals awaiting final sign-off. Research questions drafted per strand in `ai-inputs/lit-review-prompts/` (Phase 2).
 
@@ -10,7 +10,7 @@ Protocol: `C:\Users\spaci\Dropbox\Skills\lit-review-protocol.md`.
 
 ## Paper frame
 
-- **Working title:** Transparent Control: A Practical Guide to Agentic AI for Social Science Research
+- **Working title:** With Great Powers: A Practical Guide to Agentic AI for Social Science Research
 - **Thesis:** Effective agentic-AI adoption in social-science research rests on two principles — researcher **control** (humans retain key decisions) and **radical transparency** (new reporting standards for human-agent collaboration).
 - **Named interlocutors (proposed):** Pepinsky (engage and extend); Spirling (build on); Gordon, Samii, Su (build on and extend from data to process integrity); Stanford HAI 2026 (factual anchor); Munger (corroborate uptake claims). *Researcher to confirm / edit.*
 
