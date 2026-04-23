@@ -1,0 +1,274 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ---------- Typography & layout tweaks ---------- */
+
+.main-content {
+  max-width: 960px;
+
+  h1, h2, h3, h4 { color: #1b2740; }
+
+  h2 {
+    margin-top: 2.5rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #e5e9f0;
+  }
+
+  p, li { color: #2c3142; }
+}
+
+.page-header {
+  background-image: linear-gradient(120deg, #1b2740, #2d4373);
+  padding: 3rem 1rem 2.5rem;
+}
+
+.project-tagline { opacity: 0.9; }
+
+/* ---------- Lede + CTA ---------- */
+
+.lede {
+  background: #f7f9fc;
+  border-left: 4px solid #2d4373;
+  padding: 1.1rem 1.3rem;
+  margin: 1.5rem 0 2rem;
+  border-radius: 4px;
+
+  p { margin: 0 0 0.75rem; }
+  p.cta { margin-top: 1rem; }
+}
+
+.btn-primary {
+  background-color: #2d4373;
+  color: #fff;
+  border-color: #2d4373;
+}
+
+.btn-primary:hover {
+  background-color: #1b2740;
+  color: #fff;
+  border-color: #1b2740;
+}
+
+/* ---------- Two-principle cards ---------- */
+
+.principles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+
+  .principle {
+    background: #fff;
+    border: 1px solid #e5e9f0;
+    border-top: 4px solid #2d4373;
+    padding: 1.1rem 1.2rem;
+    border-radius: 4px;
+    h3 { margin-top: 0; }
+    p { margin-bottom: 0; }
+  }
+}
+
+@media (max-width: 620px) {
+  .principles { grid-template-columns: 1fr; }
+}
+
+/* ---------- Setup stack (Figure 1) ---------- */
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem 0 0.5rem;
+
+  .stack-step {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    width: min(480px, 100%);
+    background: #f2f5fa;
+    border: 1px solid #d8dfea;
+    border-radius: 6px;
+    padding: 0.7rem 1rem;
+
+    .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: #2d4373;
+      color: #fff;
+      border-radius: 50%;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    strong { display: block; color: #1b2740; }
+    .sub { display: block; font-size: 0.88rem; color: #556; }
+  }
+
+  .arrow {
+    font-size: 1.2rem;
+    color: #6b7793;
+    margin: 0.2rem 0;
+  }
+}
+
+/* ---------- Skill-building diagram (Figure 2) ---------- */
+
+.skill-diagram {
+  margin: 1.5rem 0 0.5rem;
+  text-align: center;
+
+  .row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .node {
+    background: #f2f5fa;
+    border: 1px solid #d8dfea;
+    border-radius: 6px;
+    padding: 0.7rem 1rem;
+    min-width: 220px;
+    text-align: center;
+
+    strong { display: block; color: #1b2740; }
+    .sub { display: block; font-size: 0.85rem; color: #556; }
+  }
+
+  .node.center {
+    margin: 0 auto;
+    max-width: 260px;
+  }
+
+  .node.highlight {
+    border-color: #2d4373;
+    background: #e7edf8;
+  }
+
+  .arrows {
+    color: #6b7793;
+    margin: 0.35rem 0;
+    letter-spacing: 0.25em;
+  }
+
+  .feedback {
+    font-size: 0.85rem;
+    color: #6b7793;
+    margin-top: 0.6rem;
+    font-style: italic;
+  }
+}
+
+/* ---------- Research stages (Figure 4) ---------- */
+
+.stages {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+  margin: 1.5rem 0 0.5rem;
+  flex-wrap: wrap;
+
+  .stage {
+    flex: 1 1 180px;
+    background: #f2f5fa;
+    border: 1px solid #d8dfea;
+    border-radius: 6px;
+    padding: 0.85rem 0.9rem;
+
+    h4 { margin: 0 0 0.4rem; color: #1b2740; }
+    p { margin: 0; font-size: 0.9rem; color: #445; }
+  }
+
+  .arrow-h {
+    align-self: center;
+    color: #6b7793;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .stages .arrow-h { transform: rotate(90deg); margin: 0 auto; }
+}
+
+/* ---------- Project tree + workflows (Figure 3) ---------- */
+
+.tree-and-workflows {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+  gap: 1.2rem;
+  align-items: start;
+  margin: 1.5rem 0 0.5rem;
+
+  pre.tree {
+    background: #f7f9fc;
+    border: 1px solid #e5e9f0;
+    border-radius: 4px;
+    padding: 0.9rem 1rem;
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: #1b2740;
+    overflow-x: auto;
+  }
+
+  .workflows {
+    margin: 0;
+    padding-left: 1.1rem;
+    li { margin-bottom: 0.55rem; }
+  }
+}
+
+@media (max-width: 720px) {
+  .tree-and-workflows { grid-template-columns: 1fr; }
+}
+
+/* ---------- Asset cards ---------- */
+
+.assets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.9rem;
+  margin: 1.5rem 0;
+
+  .asset {
+    background: #fff;
+    border: 1px solid #e5e9f0;
+    border-radius: 6px;
+    padding: 0.9rem 1rem;
+
+    h4 { margin: 0 0 0.4rem; color: #1b2740; }
+    p { margin: 0; font-size: 0.92rem; color: #445; }
+    code { background: #eef2f8; padding: 0.05em 0.35em; border-radius: 3px; }
+  }
+}
+
+/* ---------- Misc ---------- */
+
+.fig-caption {
+  text-align: center;
+  font-size: 0.88rem;
+  color: #6b7793;
+  margin: 0.3rem 0 1.8rem;
+  font-style: italic;
+}
+
+.verification-note {
+  margin-top: 2rem;
+  padding: 0.8rem 1rem;
+  background: #fff8e1;
+  border-left: 3px solid #c99a2e;
+  border-radius: 3px;
+  font-size: 0.92rem;
+  color: #5d4c1e;
+}
+
+blockquote {
+  background: #f7f9fc;
+  border-left: 3px solid #2d4373;
+}

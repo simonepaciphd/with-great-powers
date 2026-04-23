@@ -1,0 +1,19 @@
+title: With Great Powers
+description: A Practical Guide to Agentic AI for Social Science Research — Simone Paci (Stanford), April 2026
+show_downloads: false
+theme: jekyll-theme-cayman
+
+author:
+  name: Simone Paci
+  email: spaci@stanford.edu
+  affiliation: Stanford University
+
+paper:
+  draft_url: https://www.dropbox.com/scl/fo/fhwo1steehsz9knhxkjmt/AKRke9Y-8cThLowew2Gw_Bs?rlkey=i7etn98de7zvv0m5dej4amqg3&st=gx0ysnm1&dl=0
+  repo_url: https://github.com/simonepaciphd/with-great-powers
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
