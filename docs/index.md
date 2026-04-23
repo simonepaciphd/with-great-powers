@@ -12,6 +12,11 @@ title: With Great Powers
   </p>
 </div>
 
+<figure class="hero-figure">
+  <img src="{{ '/assets/images/two-extremes.png' | relative_url }}" alt="Side-by-side infographic contrasting black-box delegation with substantive control and radical transparency in AI-assisted research.">
+  <figcaption>Two extremes of AI-assisted research — from black-box delegation to substantive control with radical transparency.</figcaption>
+</figure>
+
 ## Two governing principles
 
 <div class="principles">
