@@ -94,7 +94,50 @@ Goal: pick how agents will find and load skills when invoked. This is the *libra
 - If frontmatter-discovery: write a `CONVENTIONS.md` (or a short header comment) specifying the required frontmatter schema.
 - If harness-native: document in `README.md` which harness and which registration path is expected, so a reader landing in the folder years later knows how it was meant to be used.
 
-Present the scaffold to the researcher. Do not copy skills in until sign-off.
+Present the scaffold to the researcher. Do not copy skills in until sign-off. If the chosen librarian pattern requires a library format the current library does not match — most common case: harness-native or hybrid on a library of flat `.md` files — run Phase 2.5 next. Otherwise skip to Phase 3.
+
+---
+
+## Phase 2.5 — Align library format with librarian pattern *(conditional)*
+
+**Run this phase only if** the librarian pattern chosen in Phase 2 requires a structure the current library does not provide. The common trigger: primary harness is Claude Code, chosen pattern is harness-native or hybrid, and the library is currently flat `.md` files. Claude Code's native skill discovery requires each skill to be a **directory** containing a `SKILL.md` with YAML frontmatter (minimum: a `description:` field). Flat `.md` files sitting in `.claude/skills/` will not auto-invoke.
+
+Other cases that trigger this phase: migrating from one harness-native format to another; adopting frontmatter-discovery on a library that has no frontmatter today.
+
+Goal: transform the canonical library from its current format into the one the chosen librarian pattern requires, with explicit per-skill sign-off on any metadata the agent has to infer.
+
+**Interview checklist:**
+
+1. *"Confirming: the transformation will edit the canonical library at `<library-root>`, not just produce a transformed copy elsewhere. Canonical library writes are effectively irreversible. Do you have a backup — git history, cloud versioning, a recent snapshot — for rollback?"* If no, pause and stand one up before continuing.
+2. *"For each skill, the target format needs at minimum a `description:` field (one sentence, agent-facing, used by the harness to decide when to invoke). Should I propose one per skill from the opening paragraph of each current file, or do you want to write descriptions yourself first?"*
+3. *"Do you want to keep a flat-`.md` mirror alongside the transformed structure — e.g., a `_flat/` subdirectory or a top-level index that still lists original filenames — for human browsing? Transformed directories can be noisier to browse than flat files."*
+4. *"Are there skills you want to leave in the old format because they are experimental, external, or about to be deprecated?"*
+
+**Action step:**
+
+1. Inventory the library: list every current skill file, its current path, and its target path (for Claude-Code-native: `<library-root>/<skill-name>/SKILL.md`; `<skill-name>` is the flat filename without the `.md` extension).
+2. For each skill, draft a minimum frontmatter block:
+
+   ```yaml
+   ---
+   name: <skill-name>
+   description: <one-sentence proposal from the skill's opening paragraph>
+   ---
+   ```
+
+   Add other fields (`allowed-tools`, `user-invocable`, `context`, `paths`) only when the researcher asks for them. Most skills do not need anything beyond `name` and `description`.
+3. Present the full transformation plan as a single document — before × after paths, plus proposed frontmatter per file — and wait for explicit sign-off on each `description:`. Auto-proposals that look weak should be flagged, not hidden.
+4. Execute the approved transformation:
+   - Create `<library-root>/<skill-name>/` directory.
+   - Move the flat file into `<library-root>/<skill-name>/SKILL.md`.
+   - Prepend the approved frontmatter block.
+   - Leave no duplicate flat `.md` at the old path unless the researcher requested the mirror.
+5. If the librarian pattern (Phase 2) is index-first or hybrid, update `<library-root>/README.md` with the new relative paths.
+6. Report the transformation: files moved, frontmatter added, mirrors created if any, and any skills still needing a researcher-written `description:` because the auto-proposal was too weak.
+
+**Rule of thumb:** the wrap is a one-time cost measured in minutes per skill, mostly spent reviewing `description:` proposals. Budget ~15 minutes for a 10-skill library.
+
+**After this phase:** `skills-library-connection.md` can use mechanism A (copy into `<project>/.claude/skills/`) or B (symlink) against the transformed library, unlocking Claude Code auto-invocation at the harness level. If Phase 2.5 is skipped, mechanism C (instruction-file pointer) remains the recommended wiring for flat libraries.
 
 ---
 
@@ -173,7 +216,8 @@ Goal: the first real invocation is the final phase of setup.
 
 ## Handoff with other skills
 
-- `project-setup.md` and `project-setup-existing.md`: dispatch to this protocol when they detect no existing library. Return the chosen `<library-root>` so they can write it into the project's `README.md` Skills block.
+- `project-setup.md` and `project-setup-existing.md`: dispatch to this protocol when they detect no existing library. Return the chosen `<library-root>`; they then dispatch to `skills-library-connection.md` to wire the library into the active project.
+- `skills-library-connection.md`: runs immediately after this protocol to apply the chosen wiring between `<library-root>` and the active project, based on the harness and the library format set up here.
 - `skill-writing.md`: every new skill produced by that protocol is added to this library via Phase 3 (append a row or write frontmatter, copy the file in).
 - `lit-review-protocol.md` and any other composed skill: no direct handoff, but this protocol is their upstream dependency — without a library, none of them have a canonical home.
 

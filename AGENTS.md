@@ -91,9 +91,10 @@ See `interaction-log.csv`. Schema documented in `project-setup.md`.
 
 ## Skills
 
-- Skill library: `C:\Users\spaci\Dropbox\Skills`
-- Relevant existing skills: `paper-writing-protocol.md`, `project-setup.md`.
-- Candidate new skills (for appendix): *skill-making skill*, *project-setup skill* (this protocol, hardened).
+- **Skill library:** `C:\Users\spaci\Dropbox\Skills` — flat `.md` files, not Claude-Code-native `SKILL.md` directory format. Agents read them directly rather than via auto-invocation.
+- **Wiring mechanism:** instruction-file pointer (this file is the pointer, per `skills-library-connection.md`). No copies are kept under `.claude/skills/`; the replication-bound subset cited in the paper lives in `appendix/` per the asset-registry rules.
+- **Library contents (as of 2026-04-23):** `paper-writing-protocol.md`, `lit-review-protocol.md`, `lit-review-prompt-template.md`, `project-setup.md`, `project-setup-existing.md`, `skill-writing-protocol.md`, `skills-library-setup.md`, `skills-library-connection.md`, plus writing-protocol variants (`oped-`, `atlantic-ideas-`, `altac-writing-pitch-`).
+- **Usage rule:** for any complex task, check the library first. If no skill fits, ask the user whether to create one (via `skill-writing-protocol.md`) before improvising.
 
 ## Overleaf Integration
 

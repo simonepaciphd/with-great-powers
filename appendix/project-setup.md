@@ -15,7 +15,8 @@ When asked to run this protocol, an agent should:
 3. Generate a filled-in `README.md` from the template section below.
 4. Generate `implementation-roadmap.md` by translating the user's outline / plan into a checkable to-do list.
 5. Generate `asset-registry.csv` and `interaction-log.csv` with the schemas specified below. Pre-populate the registry with any files already present in the folder.
-6. Report the final structure back to the user and confirm before proceeding to substantive work.
+6. **Wire the project to the skills library.** If the user has an existing library, dispatch to `skills-library-connection.md` to pick the lowest-friction wiring (harness-native copy/symlink, instruction-file pointer, or README-only) for the (harness × library-format) pair. If no library exists, dispatch to `skills-library-setup.md` first, then to `skills-library-connection.md`.
+7. Report the final structure back to the user and confirm before proceeding to substantive work.
 
 ---
 
@@ -167,6 +168,7 @@ All cleaned data lives in `inputs/clean/` as [format] files, following the namin
 ## Skills
 
 - Skill library: `C:\Users\spaci\Dropbox\Skills`
+- Wiring: set during setup by `skills-library-connection.md` (lowest-friction option for the project's harness and library format).
 - For any complex task, check for an appropriate skill first. If none fits, ask the user whether to create one before improvising.
 
 ## Overleaf Integration

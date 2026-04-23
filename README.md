@@ -23,6 +23,13 @@ This repo is the full project folder used to write the paper — not a polished 
 - If you want to see the **workflow the paper argues for, in practice**, read [`AGENTS.md`](AGENTS.md), then browse [`interaction-log.csv`](interaction-log.csv) and [`asset-registry.csv`](asset-registry.csv) side-by-side.
 - If you want to **reproduce the writing setup**, start with `appendix/project-setup.md` and `appendix/startup-checklist.md`.
 
+## Skills
+
+- **Library:** `C:\Users\spaci\Dropbox\Skills` (flat `.md` files).
+- **Wiring:** instruction-file pointer in [`AGENTS.md`](AGENTS.md) (Claude-Code-readable and Codex-native); no project-local copies under `.claude/skills/`.
+- Replication-bound copies of the subset cited in the paper live in [`appendix/`](appendix/).
+- For any complex task, agents check the library first — see [`AGENTS.md`](AGENTS.md) for the full usage rule.
+
 ## Verification status
 
 Most literature and claims are marked `partially-verified` pending a final human-verification pass (Stage 6 of the project roadmap). Do not cite derived claims from this repo without checking the underlying source.

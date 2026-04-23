@@ -8,9 +8,11 @@ This folder is the online appendix for Simone Paci, *With Great Powers: A Practi
 |---|---|
 | `startup-checklist.md` | One-page checklist for researchers opening a first agentic project. Keyed to the five-layer setup stack of \S3 of the paper. |
 | `project-setup.md` | Skill for scaffolding a new project folder: directory layout, asset registry, interaction log, rules of engagement. Dogfooded on this project. |
+| `project-setup-existing.md` | Companion to `project-setup.md` for projects already underway. Maps the existing folder, offers three retrofit depths (full restructure / selective additions / minimal adoption), and produces a move list the researcher signs off on before any file is touched. First draft (v1), not yet dogfooded. |
 | `skill-writing.md` | Skill for writing a new skill. Six-phase interview-driven protocol that uses trusted sources plus a self-interview to encode the researcher's existing practice. |
 | `lit-review-protocol.md` | Skill for running a structured, agent-assisted literature review. Four phases from strand-scoping through classification, producing a Zotero-compatible bibliography and per-source classification. |
 | `skills-library-setup.md` | Skill for standing up a personal or lab-level skills library from scratch: pick location, pick librarian pattern (index-first / frontmatter-discovery / harness-native / hybrid), seed starter skills, wire into harnesses and active projects. First draft (v1), not yet dogfooded. |
+| `skills-library-connection.md` | Skill for wiring an existing project to an existing library at the lowest invocation friction the (harness × library-format) pair allows. Four mechanism families (native copy, symlink, instruction-file pointer, README-only); recommendation matrix drives the default; `README.md` Skills block always written as a backstop. Called by both `project-setup.md` and `project-setup-existing.md`. First draft (v1), not yet dogfooded. |
 | `archive/` | Obsolete versions of the above; kept per the archive-don't-delete rule of `project-setup.md`. |
 
 ## How this appendix relates to the full replication package
@@ -25,7 +27,7 @@ The skills above are the *reader-facing* slice of the replication package. The f
 
 ## Mirror note
 
-The three skills in this folder are also available in the author's global skill library at `C:\Users\spaci\Dropbox\Skills\`. The copies here are project-local and replication-bound; the global versions may continue to evolve after this paper's submission. If the two drift, the project-local copy is canonical for the purpose of reproducing this paper.
+The skills in this folder are also available in the author's global skill library at `C:\Users\spaci\Dropbox\Skills\`. The copies here are project-local and replication-bound; the global versions may continue to evolve after this paper's submission. If the two drift, the project-local copy is canonical for the purpose of reproducing this paper.
 
 ## Citation
 
