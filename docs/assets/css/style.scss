@@ -72,6 +72,17 @@
     color: #6b7793;
     font-style: italic;
   }
+
+  .fig-provenance {
+    margin: 0.4rem auto 0;
+    max-width: 720px;
+    font-size: 0.8rem;
+    color: #8591a8;
+    line-height: 1.45;
+
+    code { font-size: 0.78rem; }
+    a { color: #2d4373; }
+  }
 }
 
 /* ---------- Two-principle cards ---------- */

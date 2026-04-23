@@ -7,6 +7,7 @@ This folder is the online appendix for Simone Paci, *With Great Powers: A Practi
 | File | What it is |
 |---|---|
 | `startup-checklist.md` | One-page checklist for researchers opening a first agentic project. Keyed to the five-layer setup stack of \S3 of the paper. |
+| `self-interview-example.md` | Worked example of the prompt-level self-interview from \S3.4: eight questions the agent asks when the researcher frames a survey-questionnaire design task. Didactic illustration, not from this chapter's production. |
 | `project-setup.md` | Skill for scaffolding a new project folder: directory layout, asset registry, interaction log, rules of engagement. Dogfooded on this project. |
 | `project-setup-existing.md` | Companion to `project-setup.md` for projects already underway. Maps the existing folder, offers three retrofit depths (full restructure / selective additions / minimal adoption), and produces a move list the researcher signs off on before any file is touched. First draft (v1), not yet dogfooded. |
 | `skill-writing.md` | Skill for writing a new skill. Six-phase interview-driven protocol that uses trusted sources plus a self-interview to encode the researcher's existing practice. |

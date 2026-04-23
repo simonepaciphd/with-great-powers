@@ -2,7 +2,7 @@
 
 Living plan for the paper. Check items off as they complete; add/remove as scope evolves. Update the `last_modified` line below whenever a substantive edit is made.
 
-**Last modified:** 2026-04-23 (Stage 0 literature-verification item closed — user completed human-verification pass against primary sources on 2026-04-22. Previously: Stage 5b items #1, #2, #3 done. (1) `project-setup-existing.md` drafted. (2) `skills-library-setup.md` closed out: Phase 2.5 added for retroactive flat→native wrapping, synced to canonical library, dogfooded via the connection skill on this project. (3) `skills-library-connection.md` drafted; both `project-setup*` skills dispatch to it; run live on this project — AGENTS.md Skills block rewritten as the mechanism-C pointer, `## Skills` section added to project `README.md`. Appendix README updated with both new skills.) Previously 2026-04-22 (title changed from "Transparent Control" to "With Great Powers: A Practical Guide to Agentic AI for Social Science Research"; appendix rebuild in Overleaf: LaTeX startup checklist + skill-protocol prose descriptions + ledger-schema tables + real sample rows + nine rules of engagement + §3.1 harness footnote + §3.3 lit-review mention + §3.3 provenance terminology fix; Stage 5b punch list added below)
+**Last modified:** 2026-04-23 (Stage 4.5 editorial pass partially closed by user — $200/year figure removed from §4.1, "ChatGPT moment" slogan kept in §2.2, v1 read-through done; Stage 5b #4 drafted — self-interview worked example on survey-questionnaire design added as \S B of online appendix, cross-referenced from §3.4; Stage 5b #5 three-review-layer checklist dropped from scope per user decision. Previously 2026-04-23 (Stage 0 literature-verification closed; Stage 5b #1 project-setup-existing.md drafted; #2 skills-library-setup.md closed out with Phase 2.5 + dogfood pass; #3 skills-library-connection.md drafted and run live on this project). Previously 2026-04-22 (title changed from "Transparent Control" to "With Great Powers: A Practical Guide to Agentic AI for Social Science Research"; appendix rebuild in Overleaf).
 
 ---
 
@@ -53,10 +53,10 @@ Living plan for the paper. Check items off as they complete; add/remove as scope
 
 ## Stage 4.5 — Post-drafting review (user)
 
-- [ ] Read through v1 in Overleaf; edit prose as needed
-- [ ] Resolve two editorial flags: $200/year democratizing figure in §4.1; "ChatGPT-moment" / "Claude-Code-moment" slogans in §2.2
-- [ ] Confirm bib entries added by agent (esp. `sresearcher2026` author metadata) — tracked as task
-- [ ] Confirm appendix renders correctly in compiled PDF (verbatim line wrapping) — tracked as task
+- [x] Read through v1 in Overleaf; edit prose as needed *(done 2026-04-23)*
+- [x] Resolve two editorial flags: $200/year figure removed from §4.1; "ChatGPT moment" / "Claude-Code moment" slogans kept in §2.2 *(done 2026-04-23)*
+- [ ] Confirm bib entries added by agent (esp. `sresearcher2026` author metadata) — tracked as task, bumped to Stage 6
+- [ ] Confirm appendix renders correctly in compiled PDF — tracked as task, bumped to Stage 6
 
 ## Stage 5 — Online Appendix — **v1 drafted**
 
@@ -79,8 +79,8 @@ Living plan for the paper. Check items off as they complete; add/remove as scope
 - [x] **New skill: `project-setup-existing.md`** — companion to `project-setup.md` for projects already underway. Workflow: (i) map existing folder and asset structure; (ii) propose how to implement the agentic workflow in place, offering three options — restructure the folder, add folders selectively where needed, or a minimal adoption that adds a single agent-facing folder plus the two CSV ledgers; (iii) generate a retrofit plan the user signs off on before any moves. *(Drafted 2026-04-23 at `Skills/project-setup-existing.md` and `appendix/project-setup-existing.md`; appendix README updated. Not yet dogfooded.)*
 - [x] **New skill: `skills-library-setup.md`** — for researchers without an existing skills library. Workflow: (i) pick a canonical library location; (ii) scaffold the folder; (iii) seed with starter skills; (iv) wire the library into the user's harness. Also usable as the "set up a new library" branch called by the connection workflow below. *(Drafted 2026-04-22 at `appendix/skills-library-setup.md`; synced to canonical `Skills/` library 2026-04-23; Phase 2.5 added 2026-04-23 for retroactive flat→native format wrapping when a harness-native librarian pattern is chosen on an existing flat library. Dogfooded 2026-04-23 via the connection skill run on this project.)*
 - [x] **Cross-skill workflow: connect project orchestration to the skills library.** Add to *both* `project-setup.md` and `project-setup-existing.md` a phase that (i) locates the user's skills library if present; (ii) if absent, dispatches to `skills-library-setup.md`; (iii) writes the library path into the project `README.md` under a "Skills" section so every agent instance can find it. *(Drafted 2026-04-23 as a standalone skill `skills-library-connection.md` rather than inline phases, so the wiring is harness-adaptive — Claude Code / Codex / Cursor each get a different lowest-friction default based on the library format (flat `.md` vs. SKILL.md-directory native). Both `project-setup.md` variants now dispatch to it. Also synced `skills-library-setup.md` from appendix into the canonical `Skills/` library so the handoff works for other projects.)*
-- [ ] **Self-interview worked example for §3.4.** Add a short appendix sidebar (or subsection) showing 5–8 actual questions the agent asked during this chapter's production when building its prompt plan, to make the prompt-level self-interview concrete. Cross-reference from §3.4 body.
-- [ ] **Three review-layer checklist for §3.5.** Short three-block checklist parallel in form to the startup checklist, one block per agent-management review layer (dual chain-of-thought + final-output review; secondary validation checks; review-agent team). Add as an appendix section and cross-reference from §3.5 body.
+- [x] **Self-interview worked example for §3.4.** *(Drafted 2026-04-23 as \S B of the online appendix, `appendix/self-interview-example.md` + Overleaf mirror. Didactic illustration on survey-questionnaire design with 8 Q&A pairs under a load-bearing + domain-dominant selection rubric; scope pivoted from "questions asked during this chapter's production" to a generic social-science instrument at user's direction. Cross-referenced from §3.4 body; appendix intro updated from "four complementary artifacts" to "five".)*
+- [ ] ~~**Three review-layer checklist for §3.5.**~~ *Dropped from scope 2026-04-23 per user decision.*
 
 ## Stage 6 — Review & Submission
 

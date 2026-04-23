@@ -1,0 +1,105 @@
+Process note for website infographic figure: This file records the ChatGPT-assisted design conversation used to develop the infographic contrasting “Black-box delegation” with “Substantive Control and Radical Transparency” in AI-assisted social science research. The exchange covered concept development, alignment with the paper’s framing, visual choices, wording, workflow structure, and prompt refinement for image generation. It is provided as part of the transparency record underlying the figure’s creation.
+
+Date of conversation: April 23, 2026
+Tooling used: ChatGPT (GPT-5.4 Thinking) with OpenAI image generation (gpt-image-2)
+Related project: With Great Powers: A Practical Guide to Agentic AI for Social Science Research
+Purpose: To design a web infographic illustrating two contrasting workflows for using AI in empirical social science research, using the same difference-in-differences example across both panels.
+
+#### Researcher input #1:
+
+I would like to create an infographic for my work here:
+ https://simonepaciphd.github.io/with-great-powers/
+
+The idea would be to show the two extremes of how to work with AI for an intuitive and user-friendly visualization up top.
+
+On the one hand, a researcher dropping a dataset in a chat and asking the AI model to "run a diff-in-diff to show that..." and then receiving the figures/tables/text to explain and putting it all in their paper.
+
+On the other, a researcher following my approach, setting up agents in a shared repo with clear guidelines, collaborating through the design, implementation, and interpretation of the DID, with appropriate control over substantive decisions, verification, and tracking/reporting for transparency 
+
+Perhaps this could be two infrographic style images side by side with each workflow illustrated.
+
+First read the website, think hard through this and ask me questions. Afterwards, I will activate the image model to create the images
+
+
+#### Model response: 
+
+I’m going to read the site closely and extract the core framing so the infographic concept matches your actual argument rather than a generic “good AI vs bad AI” visual. Then I’ll turn that into a few concrete design questions that matter for the image prompt.
+
+Thought for 9s
+
+I read the site closely. The strongest visual logic is not just “bad AI use vs good AI use,” but black-box delegation vs researcher-controlled, transparent orchestration. Your page is very explicit that the contrast turns on two governing principles—researcher control and radical transparency—and on the idea that AI should be embedded in a structured workflow rather than treated as an all-purpose oracle.
+
+A few things from the site feel especially important for the infographic concept:
+
+The “good” side should not look like the researcher manually doing everything. It should look like delegation inside a governed system: repo, agent rules, skills, prompts, verification, logs, provenance flags, and human control over substantive decisions. That is the core of your argument.
+
+The “bad” side should not be caricatured as simply “using chat.” The sharper contrast is: the researcher offloads substantive judgment to a chat model, asks for a DID to prove a desired result, receives outputs that flow straight into the paper, and leaves no transparent record of process, provenance, or verification. Your site frames this as exactly the kind of practice that risks a wider replicability gap.
+
+The “good” side should probably visually incorporate at least some elements from your setup stack: tool/harness, context repository, prompt structure, agent management, plus the transparency layer of asset registry, interaction log, provenance, verification. Those are distinctive and make the image yours rather than generic AI-governance art.
+
+The DID example is a smart choice, because your site explicitly includes empirics as a stage where agents can help implement pipelines, run specification sweeps, and produce tables/figures—while the researcher still retains control over design and interpretation.
+
+Here are the questions I’d want answered before drafting the final image prompts:
+
+Tone: Do you want the left-hand extreme to look mildly cautionary and realistic, or more sharply satirical?
+For example, “problematic but common workflow” versus “obviously reckless shortcut.”
+Normative labeling: Should the two panels be labeled explicitly, such as
+“Oracle use” vs “Governed collaboration”
+or
+“Black-box delegation” vs “Researcher-controlled agentic workflow”?
+Or do you want the images to imply the contrast without those labels?
+Audience: Is this primarily for other social scientists, for students, or for a broader public-facing audience?
+That affects how much repo / harness / provenance jargon we can safely visualize.
+Level of technical detail in the right-hand panel: Do you want visible artifacts like
+AGENTS.md, README.md, interaction-log.csv, asset-registry.csv, verification flags, and provenance labels?
+Or should those be abstracted into icons like “rules,” “logs,” “verification,” and “audit trail”?
+How central should the DID example be?
+Should both panels revolve around the exact same empirical task—same dataset, same treatment/control graphic, same event-study / table outputs—so the contrast is strictly about workflow? I think that would be strongest.
+How strong should the critique of the left-hand side be?
+Should the prompt bubble literally say something like
+“Run a diff-in-diff to show that X…”
+to foreground motivated reasoning,
+or should it be toned down to something like
+“Run a DID on this dataset and draft the results section”?
+Visual style: Which direction do you want?
+clean academic vector infographic
+editorial / magazine style
+slightly comic / narrative storyboard
+isometric workflow diagram
+hand-drawn explainer style
+Layout: Do you want
+two separate vertical panels side by side,
+a left-to-right “bad workflow / good workflow” sequence,
+or one mirrored composition with the same researcher in two worlds?
+Branding and text density: Should this sit at the top of the site with very little text inside the image, or can the panels contain small callouts and labels?
+For web hero placement, I’d usually keep text sparse.
+Emotional framing of the right side: Should the “good” workflow feel
+disciplined and audit-ready,
+collaborative and empowering,
+or both?
+Your paper argues both, but the dominant mood matters for the image.
+
+My current instinct is that the strongest version would be:
+
+same empirical problem in both panels
+same researcher archetype in both panels
+left panel = single chat window, desired conclusion, instant tables/figures/text dropped into manuscript, no trail
+right panel = shared repo workspace with agent collaborators, explicit rules, logs, verification checkpoints, researcher making substantive choices at key junctions
+
+If you answer those, I can turn this into a precise set of image prompts for the generator.
+
+#### Researcher input #2:
+
+1. The left should be realistic but drastic like in my example above. Doing black-box delegation with minimal instructions and accepting the results without any verification/replicability
+2. Let's stick to the language of the paper: "Black-box delegation" vs "Substantive Control and Radical Transparency"
+3. Social scientists first, but also students/broader so let's use technical language in a way that still makes understanding the gist doable
+4. Just enough, high-level / aggregated versions of whats discussed in the paper
+paper
+5. Yes, same task but let's not go crazy with details. Let's pick a simple, credible example
+6. Let's actually have the user ask the chat what they can do to show that a policy had a specific effect after uploading the data and the chat suggesting diff in diff
+7. Clean academic but with easy visual narrative -- scientific-leaning storyboard 
+8. Two separate vertical panels
+9. Sparse text, just enough to get it.
+10. Keep neutral emotionally and same across the two examples.
+
+This will go under the hero of the current github page, after the "read the paper here / find repo here"

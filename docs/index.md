@@ -15,6 +15,7 @@ title: With Great Powers
 <figure class="hero-figure">
   <img src="{{ '/assets/images/two-extremes.png' | relative_url }}" alt="Side-by-side infographic contrasting black-box delegation with substantive control and radical transparency in AI-assisted research.">
   <figcaption>Two extremes of AI-assisted research — from black-box delegation to substantive control with radical transparency.</figcaption>
+  <p class="fig-provenance">Designed through a ChatGPT session (GPT-5.4 Thinking) and rendered with OpenAI <code>gpt-image-2</code> on 2026-04-23. Full production transcript: <a href="https://github.com/simonepaciphd/with-great-powers/blob/main/scripts/image-generation-chat.txt" target="_blank" rel="noopener"><code>scripts/image-generation-chat.txt</code></a>.</p>
 </figure>
 
 ## Two governing principles
