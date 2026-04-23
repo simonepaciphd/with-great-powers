@@ -1,0 +1,40 @@
+% Table 1 — Key vocabulary for agentic AI in social-science research
+% Requires: \usepackage{booktabs}, \usepackage{tabularx}, \usepackage{float}
+% Draft v2 (2026-04-21): tightened text ~30%, anchored with [H].
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}lXX@{}}
+\toprule
+\textbf{Concept} & \textbf{Definition} & \textbf{Example} \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{Fundamentals}} \\
+\addlinespace
+Generative AI (GenAI) & Models that produce text, code, or images from a prompt. A narrow slice of the wider AI umbrella, which also houses predictive and classical ML. & ChatGPT drafting a literature summary. \\
+\addlinespace
+Agentic AI & A GenAI model wired into a runtime that lets it call tools, read and write files, execute code, and loop until a task is done. & Claude Code opening a repo, editing files, running tests, and iterating without re-prompting. \\
+\addlinespace
+Model-instance & One stateful session of a model with a bounded \emph{context window}. Performance degrades as the window fills; long tasks need \emph{compaction} or a restart. & A session nearing its context limit compacts earlier turns and continues. \\
+\addlinespace
+Subagent / agent swarm & A parent agent spawns child instances with scoped tasks and fresh context, then integrates their outputs. & A research-lead agent dispatching parallel search subagents, one per literature strand. \\
+\addlinespace
+Hallucination & Confident but fabricated or misremembered output. Two modes: \emph{false positives} (invented citation, variable, or fact) and \emph{false negatives} (information present but missed). & Citing a paper that does not exist; missing a footnote in a document the agent has seen. \\
+\addlinespace
+\midrule
+\multicolumn{3}{@{}l}{\emph{Engineering layers}} \\
+\addlinespace
+Prompt engineering & Crafting the instruction given to a model for a single task. Still necessary, no longer sufficient. & Specifying role, task, format, and worked examples for a classification job. \\
+\addlinespace
+Context engineering & Curating what the model can see: which files, prior turns, reference documents, and scratch space are visible at any moment. & A project folder with README, roadmap, background notes, and archive pattern, so any session starts with the right material at hand. \\
+\addlinespace
+Harness engineering & Designing the runtime around the model: which tools, skills, permissions, and control loops exist before any prompt is written. & Choosing Claude Code over a bare chat; configuring allowed shell commands and available skills. \\
+\addlinespace
+Skill & A reusable, named procedure an agent can invoke on demand, encoding the researcher's preferred method for a recurring task. & A \texttt{lit-review-protocol} skill standardizing how every literature search is run, logged, and classified. \\
+\addlinespace
+Orchestration & The researcher's design for how tasks are split and routed across instances, subagents, and skills over a project. & One instance per section, subagents per literature strand, a shared skills library, a running interaction log. \\
+\bottomrule
+\end{tabularx}
+\caption{Key concepts of agentic AI for social-science research. The upper block introduces what the objects \emph{are}; the lower block introduces the layers at which a researcher designs \emph{how they are used}.}
+\label{tab:vocabulary}
+\end{table}

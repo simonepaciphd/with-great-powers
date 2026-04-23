@@ -1,0 +1,112 @@
+working title: transparent control: a practical guide to Agentic AI for Social Science Research
+
+Key narrative: 
+research has been revolutionized. the last five months have seen a growing portion of researchers change their work routine drastically.
+However, uptake is uneven and best practices slow to form and diffuse. The focus of this article is to provide a primer on agentic AI
+for social science research, with an emphasis on basic concepts, effective workflows, and governing principles. 
+
+Outline (6-8 page paper)
+
+1) Intro (3 paragraphs)
+1.1 Motivation = research revolution, some numbers on changes/heterogeneity, some examples of frontier applications, emerging near-epistemological debates 
+1.2 while relying & in conversation with above, this chapter takes the most concrete approach possible: three-fold contribution = need for basic AI literacy + best practices 
+1.3 core governing principles: control (researcher should retain all key decision-making) + transparency (new standards for reporting)
+
+2) The AI Vocabulary
+
+2.0 Goal: understand key concepts & components of the AI landscape
+
+2.1 Fundamentals
+GenAI vs. AI
+Agentic vs. non-agentic AI (difference & why agentic AI unlocked the research revolution in early 2026)
+What is a model-instance (context window, degradation, compacting...), changing capabilities of models are changing "effective use" demands 
+Subagents / agent "swarms"...
+challenges: hallucinations & reliability = think about false positive errors (info made up or misinterpreted) & false negative errors (info missed when present)
+Why agents need our help: help them help us! (metaphor: think of an extremely smart RA = blindfolded with pen/paper vs RA with clear instructions, high-powered laptop, access to a curated library of textbooks & resources)
+
+2.2 key components 
+An evolving best-practice timeline: prompt engineering (chatgpt moment) -> context engineering (increasing context window) -> harness engineering (claude code moment)
+Skills & orchestration: the way to control & customize
+
+Table 1: key concepts & definitions & example application
+
+3) How To Deploy AI Effectively
+
+3.0 Goal: create a personal research workflow around AI tools = choice of tools & what it entails + engineering effective AI orchestration from higher-level of abstraction to more detailed/specific tasks
+
+Figure 1: Setup process (tool choice -> harness engineering -> context engineering -> prompt engineering -> agent management)
+
+3.1 Choice of toolset 
+= IDE & model: claude code, codex, antigravity, open claw, VS studio, terminal...
+= so far, 3+ frontier providers with intense market competition
+= closed-weights vs. open-weights choice (cite HAI 2026 index, open-weights lag a bit, cite research by Arthur Spirling on replicability)
+
+3.2 Harness engineering
+= skills library (how to build a skill? how to maintain a library?) Build them based on your trusted sources (background papers) & your preferences (self-interview). Unfolding skills for better context management.
+Figure 2: example on how to build a skill (e.g. diff-in-diff skill = identify key sources + have a conversation about how you'd go about implementing a diff-in-diff)
+= tools (e.g. which libraries to use & stub code snippets) & workflows (how to go about a complex task, how to pick skills, when/how to engage user...)
+= verbosity check: cleanup crew + summary crew + review crew
+
+3.3 Context engineering
+= think of a sandbox repository (folder directory) with all the relevant knowledge for a project (background concepts, lit, data, scripts, feedback...) 
+= clear agent orchestration (readme & implementation roadmap / up-to-date to-do list / archive subfolders for routine cleanup) 
+= clear workflows for transparency & reporting: 
+- asset registry for human-review tracking (all major assets should be marked as human-produced vs. agent-produced & have a verification flag: not-verified, partially-verified, human-verified/finalized)
+- interaction log csv for summary of all user-agent interactions (date, summary of researcher input, summary of agent output, model metadata... potential for encryption-based mechanism? Cite Gordon, Samii, and Su arxiv paper on Data-NoMad)
+= create a "project-setup.md" skill to do all of the above semi-automatically
+figure 3: sample project setup (directory sample + key workflows)
+
+3.4 Prompt engineering
+= one instance for one task
+= clear-instructions: agent will tend to "make up how to do things" unless instructed clearly. The design of the plan is EVERYTHING. 
+= goal-oriented initial plan + lots of self-interviews + lots of subplans for each major stage
+= need for clear validation/deterministic validation checks whenever possible
+
+3.5 Agent management throughout the research process
+= opportunities to integrate agents at all stages of the research process
+Figure 4: research stages & potential for AI integration (research question, theory, empirics, writing & presentation), each stage should have a few suggested applications
+= review of the internal chain-of-thought
+= review of intermediate steps & validation checks
+= final review of all finalized output
+
+4) Conclusions
+
+4.1 The challenge: risks and ethics 
+some things I highlight & provide initial answers to:
+= Effects on human learning & insulating our fundamental skills (this is about retaining control: intellectual & operational control)
+= Effects on research reliability: p-hacking & multiverse analysis (this is about new standards of radical transparency)
+other things I don't address directly but they require careful consideration:
+= Effects on research quality: pressure to move fast, we are trained to think deeply & slowly about things...
+= Discipline-level risks: uneven adoption will drive large productivity differentials, might be correlated with access to resources (though currently the cost of a subscription can be relatively contained at ~$200/year, so this could also be a democratizing force)
+= Ethical risks: Environmental, Privacy concerns, Societal-impact concerns,
+= Unknown unknowns?
+
+4.2 Radical transparency
+= To meet the moment: an expanded understanding of a replication package 
+= visibility on the full research process (all inputs, all throughputs, all outputs)
+= both good news and bad news: bar for transparency has increased, with associated demands on researcher & reviewers
+= good news: AI tools give us ways of properly managing this new burden
+
+4.3 The need for flexibility and continuous researcher skill-building 
+= things move fast and all that is outlined here might be outdated in 6 months
+= most useful skill might be the ability of keeping up with innovation
+= departments should think about institutionalizing AI-readiness systems: both in education & in research capabilities
+
+4.4 The Future of Social Science Research
+This chapter has taken a very practical/concrete approach & somewhat shied away from big-picture questions. Indeed, clarifying and answering these questions is the task for the full research community in the months and years ahead with potentially radical implications for what we think about the scientific enterprise, the value of researchers' human input & the value the scientific/academic sector places on research output. 
+However, the answer to many such questions are implicit in the suggested approach. Much of this is based on my personal experience in the last 2 years & conversations with colleagues, mentors, peers, and students. 
+
+
+Online Appendix 
+= skill-making skills
+= project-setup skill
+= full replication package for this chapter: all assets/folders/input/throughput/output
+
+
+
+
+
+
+
+
+

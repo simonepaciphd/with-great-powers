@@ -1,0 +1,5 @@
+citekey,strand,reliability,sections,evidence_type,read_status,verification,note_file,notes
+gordon2025datanomad,A2-trust-in-ai-research,high,"3.3,4.2",methodological,skimmed,partially-verified,ai-inputs/gordon-samii-su-data-nomad.md,Data-NoMAD tool for cryptographic data attestation; process-integrity analogy for interaction log
+hai2026index,"L1-landscape-adoption-and-heterogeneity,A2-trust-in-ai-research,B2-ethics-environment-privacy",high,"1.1,3.1,4.1,4.2",empirical,skimmed,partially-verified,ai-inputs/hai-index-2026.md,Factual anchor for adoption numbers; open-vs-closed gap; transparency-index drop; environment data
+pepinsky2026agentic,"A1-ai-in-the-research-process,A3-control-and-research-decision-ownership",low,"1.1,3.5,4.1",normative,read,partially-verified,ai-inputs/pepinsky-agentic-ai.md,Primary interlocutor; rules-vs-interpretation line; p-hacking concern; re-read before citing
+spirling2023nature,A2-trust-in-ai-research,high,"3.1,4.2",normative,skimmed,partially-verified,ai-inputs/spirling-replicability.md,Open-source case for replicability; locate full Spirling papers on arthurspirling.org

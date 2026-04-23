@@ -1,0 +1,31 @@
+# landscape-adoption-and-heterogeneity — Literature landscape
+
+## Top 3 most relevant sources
+1. `mohammadi2026reshaping` — The strongest peer-reviewed cross-national source in this scan: a 20-country survey of publishing academics with direct evidence on field, country, gender, role, and task heterogeneity.
+2. `oup2024researchersai` — The clearest non-peer-reviewed benchmark for academic-researcher adoption, with discipline, career-stage, country, and institutional-policy breakdowns across 2,345 respondents.
+3. `chugunova2026germany` — The best large-N source on institutional/resource heterogeneity, barriers, familiarity, and possible organizational interventions.
+
+## Themes identified
+- **Adoption is already high, but estimates vary by sample and definition**: Benchmarks range from 76% using some AI tool in research in OUP's 2024 global survey to 84% overall use in Wiley's 2025 study; peer-reviewed cross-national evidence also points to widespread uptake, but not with a single harmonized headline rate. Representative sources: `oup2024researchersai`, `wiley2025adoption`, `mohammadi2026reshaping`, `arroyomachado2025academicscientists`.
+- **Depth of use is shallower than the headline adoption numbers suggest**: Across studies, the modal uses are translation, editing, summarizing, literature discovery, writing, and proofreading. Data analysis appears, but usually less frequently; direct evidence on API use, custom pipelines, IDE-integrated agents, or multi-step agentic workflows is extremely sparse. Representative sources: `oup2024researchersai`, `andersen2025genai`, `mohammadi2026reshaping`, `alvero2026sociological`, `arroyomachado2025academicscientists`.
+- **Heterogeneity is real across field, career stage, age, gender, country, and institution type**: Early-career or younger researchers tend to adopt more often in several studies, though OUP also finds more early-career "Challengers." Social sciences sometimes appear relatively AI-forward in attitude or awareness, but country-level and institutional differences are substantial. Representative sources: `mohammadi2026reshaping`, `oup2024researchersai`, `dortagonzalez2024usage`, `galjak2025generational`, `chugunova2026germany`.
+- **Institutional support, learning resources, and social capital matter**: Several studies tie adoption to training, familiarity, policy clarity, and access to AI-experienced collaborators. Wiley and OUP emphasize weak organizational support and policy uncertainty; Chugunova and Dorta-González show that learning resources and barriers shape use; Bianchini highlights collaboration networks and institutional AI strength. Representative sources: `wiley2025adoption`, `oup2024researchersai`, `chugunova2026germany`, `dortagonzalez2024usage`, `bianchini2025drivers`.
+- **Forecasting work is moving from adoption to system effects**: The newest adjacent work shifts attention toward peer review strain, submission growth, and publishing governance rather than simple uptake measurement. Representative sources: `munger2026peerreview`, `hai2026aiindex`.
+
+## Tensions / debates
+- **Democratization versus new inequalities**: Bianchini argues that LLM diffusion may reduce some technical and institutional barriers, yet survey evidence still shows meaningful gaps by training, gender, age/career stage, country, and organizational support. Sources on both sides: `bianchini2025drivers` versus `mohammadi2026reshaping`, `dortagonzalez2024usage`, `chugunova2026germany`, `wiley2025adoption`.
+- **Efficiency gains versus research-integrity and trust concerns**: Many respondents report time savings and perceived benefits, but concerns about inaccuracy, plagiarism, privacy, IP, and reduced critical thinking remain pervasive. Sources on both sides: `wiley2025adoption`, `oup2024researchersai`, `andersen2025genai`, `arroyomachado2025academicscientists`, `alvero2026sociological`.
+
+## Gaps
+The literature does **not** yet deliver what the strand's RQ2 seems to want: clean measurement of the gap between consumer chat use and genuinely research-grade or agentic workflows. It also lacks strong longitudinal panel evidence for 2023–2026, relying mostly on one-off surveys or repeated but non-harmonized snapshots. The productivity-differential argument remains underdeveloped: most studies report self-reported benefits or correlates of use, not causal evidence on publication volume, citation impact, or grant success. Social-science-specific evidence exists, but it is still thin and geographically narrow (`chakravorti2025social`, `alvero2026sociological`, `galjak2025generational`).
+
+## PENDING
+- `he2026policies` — Mentioned in PNAS search results as a 2026 article on journal AI policies and AI-assisted writing. Likely relevant for downstream publication-system effects. I verified the DOI, venue, and broad claim from source snippets, but I did **not** inspect the full article text or full author list in this scan.
+- `glynn2024academai` — arXiv preprint on suspected undeclared AI use in the academic literature. Likely relevant to the publishing-governance side of the strand. I verified title, author, DOI, and abstract-level description, but I did **not** fully assess methods or fit against the strand before stopping.
+- I verified that no other promising sources were silently dropped.
+
+## Process notes
+- I screened approximately 30 candidate records and returned 12 verified sources plus 2 PENDING entries.
+- Diminishing returns appeared in the last two rounds on **both** dimensions: new searches mostly resurfaced the same source families (Wiley/OUP global surveys, national researcher surveys, discipline-specific replications, and publishing-policy commentary), and they added little genuinely new in method or sub-theme after the publication-system pieces were located.
+- I did not pursue student-only higher-education surveys or general-population AI adoption studies beyond `hai2026aiindex`, because the strand is about academic researchers rather than students or consumers.
+- I interpreted "academic researchers" broadly to include faculty, publishing academics, PhD researchers, and researchers in major research organizations, while excluding student-only evidence unless it was inseparable from researcher samples.
