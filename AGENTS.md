@@ -28,6 +28,16 @@ Project-specific rules:
 - **The paper is itself an exemplar.** This folder doubles as the replication package for the appendix; keep it clean and fully provenance-tracked as a demonstration of the workflow the paper advocates.
 - **Two dogfood skills** — *skill-making skill* and *project-setup skill* — are in scope for the online appendix. Source lives under `scripts/skills-demo/` when created.
 - **No new figures fabricated from memory.** Figures 1–4 (outline) must be composed from real references or sketched and flagged `partially-verified` until reviewed.
+- **Auto-commit after medium/big changes.** This repo is the replication package, so the git history is itself a deliverable. Commit and push (`origin/main`) without asking whenever you complete any of the following:
+  - Advancing a stage in `implementation-roadmap.md` (or any edit that flips a stage's status).
+  - Adding, renaming, or meaningfully revising any asset tracked in `asset-registry.csv` (draft sections, figures, tables, skills, literature entries).
+  - Appending a non-trivial entry to `interaction-log.csv`.
+  - Edits to `AGENTS.md`, `README.md`, or `.gitignore`.
+  - Any change touching ≥3 files or ≥~50 lines across the working tree.
+
+  **Do not commit** for: typo/whitespace-only tweaks, scratch edits you plan to revert in the same session, or while the user is clearly mid-edit on the same file. **Never commit** secrets, API keys, `.env` files, or anything under `.claude/`.
+
+  **Commit style:** short imperative subject (≤70 chars) + 1–3 line body explaining the *why*. Group related edits into one commit rather than one-per-file. Push immediately after committing unless the user has said otherwise in this session.
 
 ## Folder Structure
 
