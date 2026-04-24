@@ -75,3 +75,8 @@ credentials.json
 *.log
 tmp/
 temp/
+
+# Workshop package - raw data bundles and assembled ZIPs stay out of git;
+# Dropbox handles their sync. Hand-authored text + small reference PDFs are tracked.
+workshop-package/**/*.zip
+workshop-package.zip
