@@ -149,7 +149,7 @@ This site's companion repository <em>is</em> the project folder used to write th
 <div class="assets">
   <div class="asset">
     <h4><code>appendix/</code></h4>
-    <p>Online appendix. Every asset cited in the main text, including the dogfooded skills: <code>project-setup</code>, <code>skill-writing</code>, <code>lit-review-protocol</code>, <code>skills-library-setup</code>, <code>startup-checklist</code>.</p>
+    <p>Online appendix. Every asset cited in the main text, including the dogfooded skills: <code>startup-checklist</code>, <code>self-interview-example</code>, <code>project-setup</code>, <code>project-setup-existing</code>, <code>skill-writing</code>, <code>lit-review-protocol</code>, <code>skills-library-setup</code>, <code>skills-library-connection</code>.</p>
   </div>
   <div class="asset">
     <h4><code>drafts/</code></h4>

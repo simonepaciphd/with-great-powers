@@ -8,7 +8,7 @@ This repo is the full project folder used to write the paper — not a polished 
 
 | Path | What's here |
 |---|---|
-| [`appendix/`](appendix/) | **Online appendix** — every asset cited in the main text, including the skills dogfooded during writing (`project-setup.md`, `skill-writing.md`, `lit-review-protocol.md`, `skills-library-setup.md`, `startup-checklist.md`). |
+| [`appendix/`](appendix/) | **Online appendix** — every asset cited in the main text, including the skills dogfooded during writing (`startup-checklist.md`, `self-interview-example.md`, `project-setup.md`, `project-setup-existing.md`, `skill-writing.md`, `lit-review-protocol.md`, `skills-library-setup.md`, `skills-library-connection.md`). |
 | [`drafts/`](drafts/) | Paper drafts, including `ai-agent-draft.tex` (agent-produced first draft) and the latest compiled PDF. |
 | [`background/`](background/) | Literature notes, concepts, feedback. `background/literature/` is Zotero-compatible BibTeX + per-source classification. |
 | [`figures/`](figures/), [`tables/`](tables/), [`scripts/`](scripts/) | Figures, tables, and demo code referenced in the paper. |

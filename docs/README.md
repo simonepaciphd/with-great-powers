@@ -24,6 +24,6 @@ Then open <http://localhost:4000>.
 
 ## Content sources
 
-- Paper text paraphrased from `drafts/current draft/Draft-v1-04-22-2026.pdf` (abstract, §2, §3, §3.5).
+- Paper text paraphrased from `drafts/current draft/Draft-04-23-2026.pdf` (abstract, §2, §3, §3.5).
 - Figures 1–4 are recreated in HTML/CSS — not screenshotted — so they remain legible and responsive.
 - Repo asset descriptions mirror the top-level `README.md`.
