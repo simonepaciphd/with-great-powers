@@ -11,9 +11,9 @@
 
 ## To code along, prep before the session
 
-1. **Install Claude Code.** Five minutes: `[TO FILL: install link / command]`.
+1. **Install Claude Code.** Five minutes, platform-specific instructions at [https://claude.ai/code](https://claude.ai/code).
 2. **Authenticate.** You'll need an Anthropic account; trial credits cover the session.
-3. **Download the workshop package** from `[TO FILL: shared link]`. Unzip wherever you keep research projects.
+3. **Download the workshop package** from the Dropbox link: `[TO FILL: Dropbox share URL]`. Click "Download as ZIP" on the share page, then unzip wherever you keep research projects.
 
 The package contains three interchangeable toy projects (pick one), four prebuilt measurement skills, and a starter template for the fifth skill we'll build together.
 
@@ -26,9 +26,9 @@ The package contains three interchangeable toy projects (pick one), four prebuil
 
 **Option B — use one of our toy projects.** The package ships three; pick the one closest to your field.
 
-- **V-Dem subset + clientelism index** — cross-country, expert-coded latent measure.
-- **ANES 2020 subset + political efficacy** — US public opinion, classic survey-based construct.
-- **QoG subset + state capacity** — cross-country composite, multiple competing measures.
+- **V-Dem v16 + clientelism index** — cross-country, expert-coded latent measure.
+- **ANES 2024 + political efficacy** — US public opinion, classic survey-based construct. (ANES requires a free registration to download the data; instructions are in the folder.)
+- **QoG standard cross-section + state capacity** — cross-country composite, multiple competing measures.
 
 ## Two questions to think about beforehand
 
