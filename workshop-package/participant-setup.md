@@ -13,7 +13,7 @@
 
 1. **Install Claude Code.** Five minutes, platform-specific instructions at [https://claude.ai/code](https://claude.ai/code).
 2. **Authenticate.** You'll need an Anthropic account; trial credits cover the session.
-3. **Download the workshop package** from the Dropbox link: [https://www.dropbox.com/scl/fo/ryawd2w14s41zr604qdeo/ABu8y9wszGLw0Rijn9dXWSo?rlkey=savschqff9i3cfrjcx04vcblg&st=ru74e20n&dl=1](https://www.dropbox.com/scl/fo/ryawd2w14s41zr604qdeo/ABu8y9wszGLw0Rijn9dXWSo?rlkey=savschqff9i3cfrjcx04vcblg&st=ru74e20n&dl=1). The ZIP downloads automatically; unzip wherever you keep research projects.
+3. **Download the workshop package** from the Dropbox link: [https://www.dropbox.com/scl/fo/ryawd2w14s41zr604qdeo/ABu8y9wszGLw0Rijn9dXWSo?rlkey=savschqff9i3cfrjcx04vcblg&st=q4mx89nc&dl=1](https://www.dropbox.com/scl/fo/ryawd2w14s41zr604qdeo/ABu8y9wszGLw0Rijn9dXWSo?rlkey=savschqff9i3cfrjcx04vcblg&st=q4mx89nc&dl=1). The ZIP downloads automatically; unzip wherever you keep research projects.
 
 The package contains three interchangeable toy projects (pick one), four prebuilt measurement skills, and a starter template for the fifth skill we'll build together.
 
