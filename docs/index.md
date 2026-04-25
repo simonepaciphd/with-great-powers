@@ -129,6 +129,14 @@ project/
 
 <p class="fig-caption">A sample project context setup.</p>
 
+<div class="section-banner">
+  <span class="num">II</span>
+  <span class="label">Governance</span>
+  <span class="sub">substantive control and radical transparency</span>
+</div>
+
+Both governing principles need to bite at the operational level. **Substantive control** means drawing a hard line between procedural work that may be delegated and substantive judgment that must not — and operating accordingly. **Radical transparency** means treating the project folder as the audit trail and releasing it as part of the replication package.
+
 ## How to decide when to use AI?
 
 Before delegating any task, ask one question: is the work **procedural** or **substantive**? Procedural tasks are rote — the same steps repeated across projects, by many people, with a checkable target. Substantive tasks rely on knowledge that is idiosyncratic to your project: your question, your data, your priors, your interpretation. Agents excel at the former because they have seen the pattern many times. They fail at the latter because, with no idiosyncratic knowledge to retrieve, they fill the gap with plausible-sounding fabrication.
@@ -156,12 +164,6 @@ Before delegating any task, ask one question: is the work **procedural** or **su
       <li>decide the central claim</li>
     </ul>
   </div>
-</div>
-
-<div class="section-banner">
-  <span class="num">II</span>
-  <span class="label">Governance</span>
-  <span class="sub">documenting the AI's role for replication</span>
 </div>
 
 ## What's in the replication package
