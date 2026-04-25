@@ -8,6 +8,8 @@ Contents of the ZIP you downloaded for the 1-hour seminar. You do not need to re
 workshop-package/
 ├── README.md                 ← this file
 ├── participant-setup.md      ← the prep one-pager (what to install before the session)
+├── live-demos.pdf            ← one-page step-by-step guide for the three live demos
+├── live-demos.tex            ← LaTeX source for the demo guide
 │
 ├── toy-project-vdem/         ← choose one
 │   ├── outline.md

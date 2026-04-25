@@ -1,0 +1,86 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1.8cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{hyperref}
+
+\definecolor{wgpblue}{HTML}{2D4373}
+\definecolor{wgpdark}{HTML}{1B2740}
+\definecolor{wgpgray}{HTML}{6B7793}
+
+\setlist[enumerate]{leftmargin=*,itemsep=1pt,topsep=2pt}
+
+\titleformat{\section}[block]
+  {\large\bfseries\color{wgpdark}}
+  {\color{wgpblue}Demo \thesection.}
+  {0.5em}
+  {}
+\titlespacing{\section}{0pt}{1.0em}{0.4em}
+
+\hypersetup{colorlinks=true,linkcolor=wgpblue,urlcolor=wgpblue}
+
+\pagestyle{empty}
+\sloppy
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries\color{wgpdark} Workshop demos --- quick guide}\\[0.2em]
+{\small\color{wgpgray} Three live demos to run during the session, on your chosen toy-project folder.}
+\end{center}
+
+\vspace{0.3em}
+\noindent\textcolor{wgpblue}{\rule{\linewidth}{0.6pt}}
+
+\section{Retrofit}
+\textbf{Goal.}\quad Convert your toy-project folder into a sandbox repository with provenance and verification scaffolding.
+
+\smallskip
+\textbf{Steps.}
+\begin{enumerate}
+  \item Open Claude Code at the root of your chosen toy-project folder (\texttt{toy-project-vdem/}, \texttt{toy-project-anes/}, or \texttt{toy-project-qog/}).
+  \item Run \texttt{/project-setup-existing}.
+  \item Confirm and let the skill scaffold the missing files.
+\end{enumerate}
+
+\smallskip
+\textbf{Output.}\quad Folder now contains \texttt{README.md}, \texttt{implementation-roadmap.md}, \texttt{asset-registry.csv}, \texttt{interaction-log.csv}, and an \texttt{archive/} pattern. Every existing asset is entered into the registry with provenance (\texttt{human} / \texttt{agent} / \texttt{mixed}) and verification (\texttt{not-verified} / \texttt{partially-verified} / \texttt{human-verified}) flags.
+
+\section{Skill build}
+\textbf{Goal.}\quad Produce a new reusable measurement skill (\texttt{/operationalize}) the agent can invoke on demand --- in this project and any future project.
+
+\smallskip
+\textbf{Steps.}
+\begin{enumerate}
+  \item From the same folder, run \texttt{/skill-writing operationalize}.
+  \item Supply the external source: Adcock \& Collier 2001 (in \texttt{workshop-package/skills/sources/}).
+  \item Answer the self-interview prompts on your own measurement experience.
+  \item Review the draft skill; iterate once.
+\end{enumerate}
+
+\smallskip
+\textbf{Output.}\quad A new \texttt{operationalize.md} file in \texttt{skills/}, structured as a named procedure with inputs, steps, and verification criteria, ready to be reused on any future measurement task.
+
+\section{Measurement dossier}
+\textbf{Goal.}\quad Apply the four measurement skills in sequence to produce a complete measurement dossier on your toy project's latent variable.
+
+\smallskip
+\textbf{Steps.}
+\begin{enumerate}
+  \item Run \texttt{/conceptualize} with your latent variable (\texttt{clientelism}, \texttt{political efficacy}, or \texttt{state capacity}).
+  \item Run \texttt{/operationalize} on the conceptualization output.
+  \item Run \texttt{/validate-construct} and \texttt{/assess-reliability} on the resulting indicator.
+  \item Review the dossier; flag remaining gaps in the asset registry.
+\end{enumerate}
+
+\smallskip
+\textbf{Output.}\quad A measurement dossier in the toy-project folder containing: concept definition, operational indicator, construct-validity check, reliability assessment, and an audit-ready interaction log of every step.
+
+\end{document}
