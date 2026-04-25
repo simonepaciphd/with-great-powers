@@ -85,6 +85,38 @@
   }
 }
 
+/* ---------- Section banners (Best practice / Governance) ---------- */
+
+.section-banner {
+  margin: 3rem 0 1rem;
+  padding: 0.85rem 1.1rem;
+  background: linear-gradient(120deg, #1b2740, #2d4373);
+  color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+
+  .num {
+    font-weight: 700;
+    font-size: 1.15rem;
+    opacity: 0.85;
+  }
+  .label {
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .sub {
+    font-size: 0.92rem;
+    opacity: 0.85;
+    font-style: italic;
+  }
+}
+
 /* ---------- Two-principle cards ---------- */
 
 .principles {
@@ -260,6 +292,34 @@
 
 @media (max-width: 720px) {
   .tree-and-workflows { grid-template-columns: 1fr; }
+}
+
+/* ---------- Procedural vs. substantive decision grid ---------- */
+
+.decide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+
+  .decide-col {
+    background: #fff;
+    border: 1px solid #e5e9f0;
+    border-radius: 4px;
+    padding: 1.1rem 1.2rem;
+
+    h3 { margin-top: 0; }
+    .why { font-size: 0.92rem; color: #445; margin: 0 0 0.7rem; }
+    ul { margin: 0; padding-left: 1.1rem; }
+    li { margin-bottom: 0.3rem; font-size: 0.95rem; color: #2c3142; }
+  }
+
+  .decide-col.use     { border-top: 4px solid #2d7a4f; }
+  .decide-col.avoid   { border-top: 4px solid #b8503c; }
+}
+
+@media (max-width: 620px) {
+  .decide-grid { grid-template-columns: 1fr; }
 }
 
 /* ---------- Asset cards ---------- */

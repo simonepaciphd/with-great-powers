@@ -32,6 +32,12 @@ title: With Great Powers
   </div>
 </div>
 
+<div class="section-banner">
+  <span class="num">I</span>
+  <span class="label">Best practice</span>
+  <span class="sub">how to set up and run AI agents in research</span>
+</div>
+
 ## The setup stack
 
 The paper proposes a five-layer workflow. Each layer conditions the ones below it — tool choice determines which harnesses can exist on top; the harness determines which skills and tools the agent can reach; and so on down to agent-level management across the research process.
@@ -48,7 +54,7 @@ The paper proposes a five-layer workflow. Each layer conditions the ones below i
   <div class="stack-step"><span class="num">5</span><div><strong>Agent management</strong><span class="sub">orchestration + verification across the research process</span></div></div>
 </div>
 
-<p class="fig-caption">Figure 1 · Setting up AI agents in the research process.</p>
+<p class="fig-caption">Setting up AI agents in the research process.</p>
 
 ## Skills as the central artifact
 
@@ -78,39 +84,19 @@ Inside any harness, the highest-leverage object is the **skill library**: a pers
   <div class="feedback">↑ feedback loops back to sources</div>
 </div>
 
-<p class="fig-caption">Figure 2 · A procedural approach to skill-building.</p>
+<p class="fig-caption">A procedural approach to skill-building.</p>
 
-## Where agents fit across the research process
+## Context engineering in practice
 
-Every stage of a research project offers candidate applications for delegation. The general rule: weight the balance between the **procedural** and **substantive** nature of a task — agents shine on procedural work, become unreliable when decisions turn substantive.
+Every agent run consumes a finite **context window**. Once it fills, the model starts forgetting earlier instructions, dropping constraints, and drifting between the unrelated tasks loaded into the same session. The discipline is to treat each model instance as **cheap and replaceable**: persistent knowledge lives in the project folder, not in the chat. A new session starts from a clean slate, pulls only what the task at hand requires, and runs a tight **plan → instruct → verify → correct** loop on artifacts the next instance can re-read.
 
-<div class="stages">
-  <div class="stage">
-    <h4>Question</h4>
-    <p>scope literatures; surface adjacent work; stress-test framings</p>
-  </div>
-  <div class="arrow-h">→</div>
-  <div class="stage">
-    <h4>Theory</h4>
-    <p>trace implications of assumptions; generate derivations; catch inconsistencies</p>
-  </div>
-  <div class="arrow-h">→</div>
-  <div class="stage">
-    <h4>Empirics</h4>
-    <p>implement pipelines; run specification sweeps; produce tables and figures</p>
-  </div>
-  <div class="arrow-h">→</div>
-  <div class="stage">
-    <h4>Writing</h4>
-    <p>draft, edit, compress; convert across formats; prepare slides</p>
-  </div>
-</div>
+That same project folder is what makes radical transparency possible. It doubles as a **sandbox repository** — a single directory carrying everything the agent needs (background concepts, literature, data, scripts, feedback) *and* a record of how each piece got there. Every asset is flagged for provenance (`human` / `agent` / `mixed`) and verification (`not-verified` / `partially-verified` / `human-verified`); every non-trivial agent session is logged. The replication package now documents the AI's role — not just the final data and code.
 
-<p class="fig-caption">Figure 4 · Research stages and candidate agentic AI applications.</p>
-
-## Radical transparency in practice
-
-Context engineering treats each project as a sandbox repository — a single folder carrying every piece of knowledge the agent needs: background concepts, literature, data, scripts, feedback. Every asset in the folder is flagged for provenance (`human` / `agent` / `mixed`) and verification (`not-verified` / `partially-verified` / `human-verified`). Every non-trivial agent session is logged. The result is a replication package that documents the AI's role, not just the final code.
+<figure class="hero-figure">
+  <img src="{{ '/assets/images/context-management.png' | relative_url }}" alt="Side-by-side infographic contrasting poor context management (single mixed instance, unstructured directory, looped disorganized workflow, context-window saturation) with strong context management (automatic intake into a structured repository and a plan-instruct-verify-correct execution workflow).">
+  <figcaption>Poor vs. strong context management — from a single saturated instance to a structured repository with a disciplined execution workflow.</figcaption>
+  <p class="fig-provenance">Designed through a ChatGPT session (GPT-5.4 Thinking) and rendered with OpenAI <code>gpt-image-2</code> on 2026-04-24.</p>
+</figure>
 
 <div class="tree-and-workflows">
 <pre class="tree">
@@ -141,7 +127,42 @@ project/
 </ul>
 </div>
 
-<p class="fig-caption">Figure 3 · A sample project context setup.</p>
+<p class="fig-caption">A sample project context setup.</p>
+
+## How to decide when to use AI?
+
+Before delegating any task, ask one question: is the work **procedural** or **substantive**? Procedural tasks are rote — the same steps repeated across projects, by many people, with a checkable target. Substantive tasks rely on knowledge that is idiosyncratic to your project: your question, your data, your priors, your interpretation. Agents excel at the former because they have seen the pattern many times. They fail at the latter because, with no idiosyncratic knowledge to retrieve, they fill the gap with plausible-sounding fabrication.
+
+<div class="decide-grid">
+  <div class="decide-col use">
+    <h3>Procedural — delegate</h3>
+    <p class="why"><strong>Why it works.</strong> Rote tasks repeat across projects; the model has seen the pattern many times. Output is checkable against a known target.</p>
+    <ul>
+      <li>code a specified estimation pipeline</li>
+      <li>format tables and figures from results</li>
+      <li>convert between data or document formats</li>
+      <li>draft boilerplate sections (methods, data documentation)</li>
+      <li>compile references on a keyword</li>
+    </ul>
+  </div>
+  <div class="decide-col avoid">
+    <h3>Substantive — keep with the researcher</h3>
+    <p class="why"><strong>Why it fails.</strong> The required knowledge is idiosyncratic to this project — your question, your data, your priors. With nothing to retrieve, the model fills the gap with plausible-sounding fabrication.</p>
+    <ul>
+      <li>decide the research question</li>
+      <li>choose which assumptions to make</li>
+      <li>choose the identification strategy</li>
+      <li>interpret coefficient estimates</li>
+      <li>decide the central claim</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-banner">
+  <span class="num">II</span>
+  <span class="label">Governance</span>
+  <span class="sub">documenting the AI's role for replication</span>
+</div>
 
 ## What's in the replication package
 
