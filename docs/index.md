@@ -9,7 +9,7 @@ title: With Great Powers
   <p class="cta">
     <a class="btn btn-primary" href="https://www.dropbox.com/scl/fo/fhwo1steehsz9knhxkjmt/AKRke9Y-8cThLowew2Gw_Bs?rlkey=i7etn98de7zvv0m5dej4amqg3&st=gx0ysnm1&dl=0" target="_blank" rel="noopener">📄 Read the current draft</a>
     <a class="btn" href="https://github.com/simonepaciphd/with-great-powers" target="_blank" rel="noopener">💾 Replication package</a>
-    <a class="btn" href="{{ '/seminar/' | relative_url }}">🎤 1-hour seminar prep</a>
+    <a class="btn" href="{{ '/seminar/' | relative_url }}">🎤 Workshop Prep</a>
   </p>
 </div>
 

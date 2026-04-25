@@ -1,29 +1,30 @@
 ---
 layout: default
-title: 1-hour seminar — participant prep
+title: Workshop Prep
 permalink: /seminar/
 ---
 
 <p class="breadcrumb"><a href="{{ '/' | relative_url }}">← Back to the paper</a></p>
 
-# Agentic AI for Social Science Research — participant prep
+<div class="lede">
+  <p><strong>A one-hour hybrid seminar on the paper.</strong> A short presentation on agentic AI in social-science research, threaded with three live demos you can code along with. Two principles anchor the argument: <strong>researcher control</strong> and <strong>radical transparency</strong>.</p>
 
-**What this is.** A one-hour hybrid seminar: a short paper presentation on how to use agentic AI responsibly in research, threaded with three live demos you can code along with. Two governing principles anchor the argument — **researcher control** and **radical transparency**.
+  <p class="cta">
+    <a class="btn btn-primary" href="https://www.dropbox.com/scl/fo/ryawd2w14s41zr604qdeo/ABu8y9wszGLw0Rijn9dXWSo?rlkey=savschqff9i3cfrjcx04vcblg&st=q4mx89nc&dl=1">⬇ Download the workshop package (ZIP)</a>
+    <a class="btn" href="https://claude.ai/code" target="_blank" rel="noopener">⚙ Install Claude Code</a>
+  </p>
+</div>
 
-**What you'll walk away with.**
+## What you'll walk away with
 
 - The five-layer setup stack for agentic research workflows (tool → harness → context → prompt → management).
 - Five measurement skills — four prebuilt, one we build together — usable in your own projects from day one.
 - A worked measurement dossier on a latent variable, either yours or one of ours.
 - A one-page startup checklist for your next AI-assisted project.
 
-## To code along, prep before the session
+## Setup
 
-1. **Install Claude Code.** Five minutes, platform-specific instructions at [claude.ai/code](https://claude.ai/code).
-2. **Authenticate.** You'll need an Anthropic account; trial credits cover the session.
-3. **Download the workshop package** from the Dropbox link: <a class="btn btn-primary" href="https://www.dropbox.com/scl/fo/ryawd2w14s41zr604qdeo/ABu8y9wszGLw0Rijn9dXWSo?rlkey=savschqff9i3cfrjcx04vcblg&st=q4mx89nc&dl=1">⬇ Download the workshop package (ZIP)</a>. Unzip wherever you keep research projects.
-
-The package contains three interchangeable toy projects (pick one), four prebuilt measurement skills, and a starter template for the fifth skill we'll build together.
+After installing Claude Code, authenticate with your Anthropic account — trial credits cover the session. Unzip the workshop package wherever you keep research projects. The package contains three interchangeable toy projects (pick one), four prebuilt measurement skills, and a starter template for the fifth skill we'll build together.
 
 ## Data: bring your own, or use ours
 
