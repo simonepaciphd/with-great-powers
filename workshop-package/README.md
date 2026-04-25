@@ -32,6 +32,8 @@ workshop-package/
 │   └── lit/
 │
 └── skills/                   ← measurement skills (to be populated before the session)
+    └── sources/              ← external sources used to build the skills
+        └── Adcock and Collier 2001 apsr - measurement validity in social sciences.pdf
 ```
 
 ## Pick one toy project
