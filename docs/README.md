@@ -5,7 +5,8 @@ Jekyll-powered landing page for *With Great Powers: A Practical Guide to Agentic
 ## Files
 
 - `_config.yml` — Jekyll config; uses the built-in `jekyll-theme-cayman`.
-- `index.md` — single-page site content.
+- `index.md` — landing page.
+- `seminar.md` — participant prep page for the 1-hour workshop (permalink `/seminar/`).
 - `assets/css/style.scss` — custom styles layered on top of Cayman.
 
 ## Publishing on GitHub Pages
