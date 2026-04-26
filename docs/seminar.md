@@ -17,27 +17,35 @@ permalink: /seminar/
 
 ## What you'll walk away with
 
-- The five-layer setup stack for agentic research workflows (tool → harness → context → prompt → management).
-- Five measurement skills — four prebuilt, one we build together — usable in your own projects from day one.
+- The five-layer setup stack for agentic research workflows (tool -> harness -> context -> prompt -> management).
+- A self-contained seminar package with local Claude/Codex wiring instead of a full external OS dependency.
+- Five measurement skills plus two setup/meta-skills you can reuse in your own projects.
 - A worked measurement dossier on a latent variable, either yours or one of ours.
 - A one-page startup checklist for your next AI-assisted project.
 
 ## Setup
 
-After installing Claude Code, authenticate with your Anthropic account — trial credits cover the session. Unzip the workshop package wherever you keep research projects. The package contains three interchangeable toy projects (pick one), four prebuilt measurement skills, and a starter template for the fifth skill we'll build together.
+After installing Claude Code, authenticate with your Anthropic account - trial credits cover the session. Unzip the workshop package wherever you keep research projects, then open `workshop-package/` itself in Claude Code or Codex so the local wiring loads.
+
+Before the session, create exactly one working folder under `workshop-package/projects/`:
+
+- **If you want a provided example:** copy one `toy-project-*` folder into `projects/`, rename it, and use `/project-setup-existing` during Demo 1.
+- **If you want your own assets:** create a new folder in `projects/`, drop in your dataset plus one or two reference papers, and use `/project-setup` during Demo 1.
+
+The package ships with local `CLAUDE.md`, `AGENTS.md`, and Claude-native wrapper skills, so it does not depend on a separate personal AI Operating System install.
 
 ## Data: bring your own, or use ours
 
-**Option A — bring your own.** Pick one concept from your current research that you have struggled to measure directly — something latent. Examples: civic engagement, clientelism, state capacity, democratic backsliding, institutional trust, political efficacy. Bring:
+**Option A - bring your own.** Pick one concept from your current research that you have struggled to measure directly - something latent. Examples: civic engagement, clientelism, state capacity, democratic backsliding, institutional trust, political efficacy. Bring:
 
 - a dataset (or a slice of one) containing candidate indicators;
 - one or two papers on how the concept has been measured in prior work.
 
-**Option B — use one of our toy projects.** The package ships three; pick the one closest to your field.
+**Option B - use one of our toy projects.** The package ships three; pick the one closest to your field.
 
-- **V-Dem v16 + clientelism index** — cross-country, expert-coded latent measure.
-- **ANES 2024 + political efficacy** — US public opinion, classic survey-based construct. (ANES requires a free registration to download the data; instructions are in the folder.)
-- **QoG standard cross-section + state capacity** — cross-country composite, multiple competing measures.
+- **V-Dem v16 + clientelism index** - cross-country, expert-coded latent measure.
+- **ANES 2024 + political efficacy** - US public opinion, classic survey-based construct. ANES requires a free registration to download the data; instructions are in the folder.
+- **QoG standard cross-section + state capacity** - cross-country composite, multiple competing measures.
 
 ## Two questions to think about beforehand
 
@@ -46,7 +54,7 @@ After installing Claude Code, authenticate with your Anthropic account — trial
 
 ## Format
 
-Sixty minutes, integrated Q&A — interrupt whenever rather than saving it for the end. Three live demos of about five minutes each. The slide deck and the package contents are yours to keep.
+Sixty minutes, integrated Q&A - interrupt whenever rather than saving it for the end. Three live demos of about five minutes each. The slide deck and the package contents are yours to keep.
 
 ---
 
