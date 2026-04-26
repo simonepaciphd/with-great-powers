@@ -33,54 +33,57 @@
 
 \begin{center}
 {\Large\bfseries\color{wgpdark} Workshop demos --- quick guide}\\[0.2em]
-{\small\color{wgpgray} Three live demos to run during the session, on your chosen toy-project folder.}
+{\small\color{wgpgray} Three live demos to run during the session from the root of \texttt{workshop-package/}.}
 \end{center}
 
 \vspace{0.3em}
 \noindent\textcolor{wgpblue}{\rule{\linewidth}{0.6pt}}
 
-\section{Retrofit}
-\textbf{Goal.}\quad Convert your toy-project folder into a sandbox repository with provenance and verification scaffolding.
+\section{Project setup}
+\textbf{Goal.}\quad Turn one participant working folder into a minimal research sandbox with provenance and verification scaffolding.
 
 \smallskip
 \textbf{Steps.}
 \begin{enumerate}
-  \item Open Claude Code at the root of your chosen toy-project folder (\texttt{toy-project-vdem/}, \texttt{toy-project-anes/}, or \texttt{toy-project-qog/}).
-  \item Run \texttt{/project-setup-existing}.
-  \item Confirm and let the skill scaffold the missing files.
+  \item Open Claude Code at the root of \texttt{workshop-package/} so the local wrapper skills load.
+  \item Choose one working folder under \texttt{projects/}: either a copied toy project or a new folder containing your own assets.
+  \item If the folder already has content (for example, a copied toy project), run \texttt{/project-setup-existing}. If it is a brand-new participant folder, run \texttt{/project-setup}.
+  \item Confirm the target folder and let the skill scaffold the missing files.
 \end{enumerate}
 
 \smallskip
-\textbf{Output.}\quad Folder now contains \texttt{README.md}, \texttt{implementation-roadmap.md}, \texttt{asset-registry.csv}, \texttt{interaction-log.csv}, and an \texttt{archive/} pattern. Every existing asset is entered into the registry with provenance (\texttt{human} / \texttt{agent} / \texttt{mixed}) and verification (\texttt{not-verified} / \texttt{partially-verified} / \texttt{human-verified}) flags.
+\textbf{Output.}\quad The chosen working folder now contains \texttt{README.md}, \texttt{implementation-roadmap.md}, \texttt{asset-registry.csv}, \texttt{interaction-log.csv}, and any missing \texttt{docs/} / \texttt{archive/} structure. Existing assets are entered into the registry with provenance (\texttt{human} / \texttt{agent} / \texttt{mixed}) and verification (\texttt{not-verified} / \texttt{partially-verified} / \texttt{human-verified}) flags.
 
 \section{Skill build}
-\textbf{Goal.}\quad Produce a new reusable measurement skill (\texttt{/operationalize}) the agent can invoke on demand --- in this project and any future project.
+\textbf{Goal.}\quad Revise or rebuild a reusable measurement skill (\texttt{/operationalize}) the agent can invoke on demand --- in this project and any future project.
 
 \smallskip
 \textbf{Steps.}
 \begin{enumerate}
-  \item From the same folder, run \texttt{/skill-writing operationalize}.
+  \item From the same session, run \texttt{/skill-writing}.
+  \item Set the target to \texttt{skills/operationalize.md}.
   \item Supply the external source: Adcock \& Collier 2001 (in \texttt{workshop-package/skills/sources/}).
   \item Answer the self-interview prompts on your own measurement experience.
-  \item Review the draft skill; iterate once.
+  \item Review the revised draft skill; iterate once.
 \end{enumerate}
 
 \smallskip
-\textbf{Output.}\quad A new \texttt{operationalize.md} file in \texttt{skills/}, structured as a named procedure with inputs, steps, and verification criteria, ready to be reused on any future measurement task.
+\textbf{Output.}\quad An updated \texttt{operationalize.md} file in \texttt{skills/}, structured as a named procedure with inputs, steps, and verification criteria, ready to be reused on future measurement tasks.
 
 \section{Measurement dossier}
-\textbf{Goal.}\quad Apply the four measurement skills in sequence to produce a complete measurement dossier on your toy project's latent variable.
+\textbf{Goal.}\quad Apply the measurement skills in sequence to produce a complete measurement dossier on your working folder's latent variable.
 
 \smallskip
 \textbf{Steps.}
 \begin{enumerate}
-  \item Run \texttt{/conceptualize} with your latent variable (\texttt{clientelism}, \texttt{political efficacy}, or \texttt{state capacity}).
+  \item Run \texttt{/conceptualize} with your latent variable (\texttt{clientelism}, \texttt{political efficacy}, \texttt{state capacity}, or your own concept).
   \item Run \texttt{/operationalize} on the conceptualization output.
   \item Run \texttt{/validate-construct} and \texttt{/assess-reliability} on the resulting indicator.
+  \item Optionally run \texttt{/validate-criterion}.
   \item Review the dossier; flag remaining gaps in the asset registry.
 \end{enumerate}
 
 \smallskip
-\textbf{Output.}\quad A measurement dossier in the toy-project folder containing: concept definition, operational indicator, construct-validity check, reliability assessment, and an audit-ready interaction log of every step.
+\textbf{Output.}\quad A measurement dossier in the working folder containing: concept definition, operational indicator, construct-validity check, optional criterion-validity check, reliability assessment, and an audit-ready interaction log of every step.
 
 \end{document}

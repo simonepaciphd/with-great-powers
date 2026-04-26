@@ -21,6 +21,10 @@ Icon?
 # Claude / AI tooling
 .claude/
 .cursor/
+!workshop-package/.claude/
+!workshop-package/.claude/skills/
+!workshop-package/.claude/skills/**/
+!workshop-package/.claude/skills/**/SKILL.md
 
 # Python
 __pycache__/
