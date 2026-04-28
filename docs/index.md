@@ -13,22 +13,33 @@ title: With Great Powers
   </p>
 </div>
 
-<figure class="hero-figure">
-  <img src="{{ '/assets/images/two-extremes.png' | relative_url }}" alt="Side-by-side infographic contrasting black-box delegation with substantive control and radical transparency in AI-assisted research.">
-  <figcaption>Two extremes of AI-assisted research — from black-box delegation to substantive control with radical transparency.</figcaption>
-  <p class="fig-provenance">Designed through a ChatGPT session (GPT-5.4 Thinking) and rendered with OpenAI <code>gpt-image-2</code> on 2026-04-23. Full production transcript: <a href="https://github.com/simonepaciphd/with-great-powers/blob/main/scripts/image-generation-chat.txt" target="_blank" rel="noopener"><code>scripts/image-generation-chat.txt</code></a>.</p>
-</figure>
+## Best practices and shared norms
 
-## Two governing principles
+Adoption has outrun shared practice and norms. Agentic AI raises two distinct questions for the research community.
 
 <div class="principles">
   <div class="principle">
-    <h3>Researcher control</h3>
-    <p>Every substantive decision — framing, empirical design, interpretation, final phrasing — stays with the researcher. Execution may be delegated; ownership and judgment cannot.</p>
+    <h3>Best practices</h3>
+    <p><em>Using AI effectively while reducing error.</em> Every new method comes with new failure modes, and the familiar task is to learn them, build the routines that catch them, and codify what works. The paper's first half lays out a five-layer workflow stack — tool, harness, context, prompt, agent management — that does exactly this.</p>
   </div>
   <div class="principle">
-    <h3>Radical transparency</h3>
-    <p>A credible replication package must now extend to the <em>inputs, throughputs, and outputs</em> of the AI-assisted process itself — not just data and code.</p>
+    <h3>Shared norms</h3>
+    <p><em>Using AI responsibly and transparently.</em> This is genuinely new. Agentic AI is the first methodology that takes <em>agency</em> in the research process — drafting, executing, deciding. It shapes not just the <em>error rate</em> of findings but the <em>direction</em> of research itself. That demands norms the field does not yet have. The paper's second half — <em>Governance</em> — proposes two: <em>researcher control</em> over every substantive decision, and <em>radical transparency</em> over the AI-assisted process.</p>
+  </div>
+</div>
+
+<figure class="hero-figure">
+  <img src="{{ '/assets/images/good-bad-practices.png' | relative_url }}" alt="Side-by-side simplified infographic contrasting bad and good practice in AI-assisted research.">
+  <figcaption>Bad vs. good practice in AI-assisted research — from black-box delegation to disciplined control with transparency.</figcaption>
+  <p class="fig-cta"><a class="btn-fig" href="#fig-two-extremes-detail">View detailed infographic</a></p>
+</figure>
+
+<div id="fig-two-extremes-detail" class="lightbox" aria-hidden="true">
+  <a href="#!" class="lightbox-backdrop" aria-label="Close"></a>
+  <div class="lightbox-content">
+    <a href="#!" class="lightbox-close" aria-label="Close">×</a>
+    <img src="{{ '/assets/images/two-extremes.png' | relative_url }}" alt="Detailed side-by-side infographic contrasting black-box delegation with substantive control and radical transparency in AI-assisted research.">
+    <p class="lightbox-caption">Two extremes of AI-assisted research — from black-box delegation to substantive control with radical transparency. Designed through a ChatGPT session (GPT-5.4 Thinking) and rendered with OpenAI <code>gpt-image-2</code> on 2026-04-23.</p>
   </div>
 </div>
 
@@ -93,10 +104,19 @@ Every agent run consumes a finite **context window**. Once it fills, the model s
 That same project folder is what makes radical transparency possible. It doubles as a **sandbox repository** — a single directory carrying everything the agent needs (background concepts, literature, data, scripts, feedback) *and* a record of how each piece got there. Every asset is flagged for provenance (`human` / `agent` / `mixed`) and verification (`not-verified` / `partially-verified` / `human-verified`); every non-trivial agent session is logged. The replication package now documents the AI's role — not just the final data and code.
 
 <figure class="hero-figure">
-  <img src="{{ '/assets/images/context-management.png' | relative_url }}" alt="Side-by-side infographic contrasting poor context management (single mixed instance, unstructured directory, looped disorganized workflow, context-window saturation) with strong context management (automatic intake into a structured repository and a plan-instruct-verify-correct execution workflow).">
+  <img src="{{ '/assets/images/context-management.png' | relative_url }}" alt="Stylized side-by-side infographic contrasting poor and strong context management in AI-assisted research.">
   <figcaption>Poor vs. strong context management — from a single saturated instance to a structured repository with a disciplined execution workflow.</figcaption>
-  <p class="fig-provenance">Designed through a ChatGPT session (GPT-5.4 Thinking) and rendered with OpenAI <code>gpt-image-2</code> on 2026-04-24.</p>
+  <p class="fig-cta"><a class="btn-fig" href="#fig-context-management-detail">View detailed infographic</a></p>
 </figure>
+
+<div id="fig-context-management-detail" class="lightbox" aria-hidden="true">
+  <a href="#!" class="lightbox-backdrop" aria-label="Close"></a>
+  <div class="lightbox-content">
+    <a href="#!" class="lightbox-close" aria-label="Close">×</a>
+    <img src="{{ '/assets/images/context-management-detail.png' | relative_url }}" alt="Detailed side-by-side infographic contrasting poor context management (single mixed instance, unstructured directory, looped disorganized workflow, context-window saturation) with strong context management (automatic intake into a structured repository and a plan-instruct-verify-correct execution workflow).">
+    <p class="lightbox-caption">Poor vs. strong context management — full detail. Designed through a ChatGPT session (GPT-5.4 Thinking) and rendered with OpenAI <code>gpt-image-2</code> on 2026-04-24.</p>
+  </div>
+</div>
 
 <div class="tree-and-workflows">
 <pre class="tree">
@@ -135,6 +155,19 @@ project/
   <span class="sub">substantive control and radical transparency</span>
 </div>
 
+## Two governing principles
+
+<div class="principles">
+  <div class="principle">
+    <h3>Researcher control</h3>
+    <p>Every substantive decision — framing, empirical design, interpretation, final phrasing — stays with the researcher. Execution may be delegated; ownership and judgment cannot.</p>
+  </div>
+  <div class="principle">
+    <h3>Radical transparency</h3>
+    <p>A credible replication package must now extend to the <em>inputs, throughputs, and outputs</em> of the AI-assisted process itself — not just data and code.</p>
+  </div>
+</div>
+
 Both governing principles need to bite at the operational level. **Substantive control** means drawing a hard line between procedural work that may be delegated and substantive judgment that must not — and operating accordingly. **Radical transparency** means treating the project folder as the audit trail and releasing it as part of the replication package.
 
 ## How to decide when to use AI?
@@ -165,6 +198,23 @@ Before delegating any task, ask one question: is the work **procedural** or **su
     </ul>
   </div>
 </div>
+
+<figure class="hero-figure">
+  <img src="{{ '/assets/images/task-content-ai-error-control.png' | relative_url }}" alt="Diagram positioning research tasks along axes of substantive content and AI error vs. researcher control.">
+  <figcaption>Where AI fits across research tasks — error and control as a function of task content.</figcaption>
+</figure>
+
+## How to report when AI was used?
+
+Releasing data and code is no longer enough. When agents have drafted, decided, or executed parts of the work, a credible replication package must extend three layers further — to the **inputs, throughputs, and outputs of the AI-assisted process** itself:
+
+- **Inputs** — the prompts, plans, and context materials given to the agent.
+- **Throughputs** — the agent's reasoning, intermediate outputs, and sign-off gates.
+- **Outputs** — final artifacts tagged with model and version metadata.
+
+The paper proposes a feasible, low-friction implementation: two CSV ledgers maintained inside the project folder. An **asset registry** flags every artifact's provenance (`human` / `agent` / `mixed`) and verification status; an **interaction log** summarizes every non-trivial agent session (date, input, output, model metadata). The project folder itself, with the ledgers inside it, becomes the audit trail.
+
+The cost is real — authors log, register, and verify; reviewers read, cross-check, and judge. The consoling point is that the same tools that raise the bar also help meet it: interaction logs are written in-session rather than reconstructed afterward, and asset registries are updated by the same agents that produce the assets.
 
 ## What's in the replication package
 
