@@ -4,7 +4,7 @@ title: With Great Powers
 ---
 
 <div class="lede">
-  <p><strong>Agentic AI is already reshaping social-science workflows.</strong> Adoption has outpaced shared standards, risking uneven uptake and a widening replicability gap. This paper is a practical manual for using agentic AI effectively <em>and</em> responsibly — grounded in two principles and a five-layer setup that researchers can implement today.</p>
+  <p><strong>Agentic AI is leading a research revolution.</strong> Most social scientists have already integrated AI in their workflows, through individual experimentation and the grapevine of department corridors. However, uneven and heterogeneous uptake poses significant risks to individual researchers as well as to the whole of the research enterprise. This paper+website+repository is at once a practical manual for using agentic AI effectively and responsibly as well as a conversation-starter for thinking about the next chapter of research in the social sciences.</p>
 
   <p class="cta">
     <a class="btn btn-primary" href="https://www.dropbox.com/scl/fo/fhwo1steehsz9knhxkjmt/AKRke9Y-8cThLowew2Gw_Bs?rlkey=i7etn98de7zvv0m5dej4amqg3&st=gx0ysnm1&dl=0" target="_blank" rel="noopener">📄 Read the current draft</a>
@@ -13,17 +13,17 @@ title: With Great Powers
   </p>
 </div>
 
-## Best practices and shared norms
+## We need best practices and shared norms
 
 Adoption has outrun shared practice and norms. Agentic AI raises two distinct questions for the research community.
 
 <div class="principles">
   <div class="principle">
-    <h3>Best practices</h3>
+    <h3>How to reduce AI error?</h3>
     <p><em>Using AI effectively while reducing error.</em> Every new method comes with new failure modes, and the familiar task is to learn them, build the routines that catch them, and codify what works. The paper's first half lays out a five-layer workflow stack — tool, harness, context, prompt, agent management — that does exactly this.</p>
   </div>
   <div class="principle">
-    <h3>Shared norms</h3>
+    <h3>How to retain control?</h3>
     <p><em>Using AI responsibly and transparently.</em> This is genuinely new. Agentic AI is the first methodology that takes <em>agency</em> in the research process — drafting, executing, deciding. It shapes not just the <em>error rate</em> of findings but the <em>direction</em> of research itself. That demands norms the field does not yet have. The paper's second half — <em>Governance</em> — proposes two: <em>researcher control</em> over every substantive decision, and <em>radical transparency</em> over the AI-assisted process.</p>
   </div>
 </div>
@@ -45,7 +45,7 @@ Adoption has outrun shared practice and norms. Agentic AI raises two distinct qu
 
 <div class="section-banner">
   <span class="num">I</span>
-  <span class="label">Best practice</span>
+  <span class="label">Best Practices</span>
   <span class="sub">how to set up and run AI agents in research</span>
 </div>
 
