@@ -7,7 +7,7 @@ title: With Great Powers
   <p><strong>Agentic AI is leading a research revolution.</strong> Most social scientists have already integrated AI in their workflows, through individual experimentation and the grapevine of department corridors. However, uneven and heterogeneous uptake poses significant risks to individual researchers as well as to the whole of the research enterprise. This paper+website+repository is at once a practical manual for using agentic AI effectively and responsibly as well as a conversation-starter for thinking about the next chapter of research in the social sciences.</p>
 
   <p class="cta">
-    <a class="btn btn-primary" href="https://www.dropbox.com/scl/fo/fhwo1steehsz9knhxkjmt/AKRke9Y-8cThLowew2Gw_Bs?rlkey=i7etn98de7zvv0m5dej4amqg3&st=gx0ysnm1&dl=0" target="_blank" rel="noopener">📄 Read the current draft</a>
+    <a class="btn btn-primary" href="https://www.overleaf.com/read/jxrvrtpysfsd#604ca2" target="_blank" rel="noopener">📄 Read the current draft</a>
     <a class="btn" href="https://github.com/simonepaciphd/with-great-powers" target="_blank" rel="noopener">💾 Replication package</a>
     <a class="btn" href="{{ '/seminar/' | relative_url }}">🎤 Workshop Prep</a>
   </p>
