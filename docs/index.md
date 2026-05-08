@@ -9,6 +9,7 @@ title: With Great Powers
   <p class="cta">
     <a class="btn btn-primary" href="https://www.overleaf.com/read/jxrvrtpysfsd#604ca2" target="_blank" rel="noopener">📄 Read the current draft</a>
     <a class="btn" href="https://github.com/simonepaciphd/with-great-powers" target="_blank" rel="noopener">💾 Replication package</a>
+    <a class="btn" href="https://github.com/simonepaciphd/ai-os-public" target="_blank" rel="noopener">🧰 AI OS starter library</a>
     <a class="btn" href="{{ '/seminar/' | relative_url }}">🎤 Workshop Prep</a>
   </p>
 </div>
@@ -254,6 +255,16 @@ This site's companion repository <em>is</em> the project folder used to write th
     <p>Living to-do list used during writing — the entry point for any new agent session.</p>
   </div>
 </div>
+
+## Companion: AI OS scaffolding
+
+The disciplined workflow this paper advocates is not specific to this project. It generalizes — across papers, teaching, advising, business — into a personal **AI Operating System** layered on top of a coding-grade harness like Claude Code. The public-tier components of Simone's setup are released as a starter library: protocol skills, five session-level personas (`chief-of-staff`, `researcher`, `writer`, `engineer`, `teacher`), and a `librarian` subagent for skill resolution.
+
+It is methodology and governance scaffolding to fork and customize, not a turnkey product. A setup guide for **Claude Code (terminal)** ships now; **Claude desktop** and **Codex** entry points are forthcoming.
+
+<p class="cta">
+  <a class="btn btn-primary" href="https://github.com/simonepaciphd/ai-os-public" target="_blank" rel="noopener">🧰 AI OS starter library on GitHub</a>
+</p>
 
 ## Citation
 

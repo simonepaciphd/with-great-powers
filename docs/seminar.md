@@ -56,6 +56,10 @@ The package ships with local `CLAUDE.md`, `AGENTS.md`, and Claude-native wrapper
 
 Sixty minutes, integrated Q&A - interrupt whenever rather than saving it for the end. Three live demos of about five minutes each. The slide deck and the package contents are yours to keep.
 
+## After the seminar
+
+The workshop package is self-contained. If you want to keep building after the session — composing your own skills, layering personas, wiring multiple projects — the public scaffolding behind Simone's personal AI OS is open-sourced as a starter library at [github.com/simonepaciphd/ai-os-public](https://github.com/simonepaciphd/ai-os-public). It ships the five personas (`chief-of-staff`, `researcher`, `writer`, `engineer`, `teacher`), protocol skills, and a `librarian` subagent. Methodology to fork and customize, not a turnkey product.
+
 ---
 
 **Questions before the session:** [spaci@stanford.edu](mailto:spaci@stanford.edu)
