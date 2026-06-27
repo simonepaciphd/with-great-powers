@@ -84,3 +84,10 @@ temp/
 # Dropbox handles their sync. Hand-authored text + small reference PDFs are tracked.
 workshop-package/**/*.zip
 workshop-package.zip
+
+# Private working notes — stay in Dropbox, never published to the public remote.
+notes/
+
+# Legacy in-Dropbox nested clone (removed during the 2026-06-27 git migration);
+# guard against re-staging if a stale copy reappears.
+/archive/

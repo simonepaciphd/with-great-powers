@@ -19,7 +19,7 @@ Core rules (apply to every project):
 5. **Log every non-trivial session** in `interaction-log.csv`.
 6. **Archive, don't delete.** Move obsolete files to the nearest `archive/` subfolder.
 7. **Consult `implementation-roadmap.md`** before starting work; update it as steps complete.
-8. **Skill orchestration.** Check `C:\Users\spaci\Dropbox\Skills` first. If no skill fits, ask before improvising.
+8. **Skill orchestration.** Check `C:\Users\spaci\Dropbox\AI Operating System\personal\skills` first. If no skill fits, ask before improvising.
 9. **Validation by default.** Cross-check claims against `background/literature/`; flag any claim not traceable to a source.
 
 Project-specific rules:
@@ -91,7 +91,7 @@ See `interaction-log.csv`. Schema documented in `project-setup.md`.
 
 ## Skills
 
-- **Skill library:** `C:\Users\spaci\Dropbox\Skills` — flat `.md` files, not Claude-Code-native `SKILL.md` directory format. Agents read them directly rather than via auto-invocation.
+- **Skill library:** `C:\Users\spaci\Dropbox\AI Operating System\personal\skills` — the current flat `.md` research-skill library. The older `C:\Users\spaci\Dropbox\Skills` folder has been retired; agents read the current files directly rather than via auto-invocation.
 - **Wiring mechanism:** instruction-file pointer (this file is the pointer, per `skills-library-connection.md`). No copies are kept under `.claude/skills/`; the replication-bound subset cited in the paper lives in `appendix/` per the asset-registry rules.
 - **Library contents (as of 2026-04-23):** `paper-writing-protocol.md`, `lit-review-protocol.md`, `lit-review-prompt-template.md`, `project-setup.md`, `project-setup-existing.md`, `skill-writing-protocol.md`, `skills-library-setup.md`, `skills-library-connection.md`, plus writing-protocol variants (`oped-`, `atlantic-ideas-`, `altac-writing-pitch-`).
 - **Usage rule:** for any complex task, check the library first. If no skill fits, ask the user whether to create one (via `skill-writing-protocol.md`) before improvising.
